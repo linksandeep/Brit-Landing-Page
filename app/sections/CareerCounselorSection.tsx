@@ -1,6 +1,10 @@
+"use client";
+
+import { type FormEvent, useState } from "react";
 import Image from "next/image";
 
 import { audienceOptions } from "@/app/data/landing-page";
+import { submitLeadForm } from "@/app/lib/lead-form";
 
 function UKFlag() {
   return (
@@ -14,6 +18,25 @@ function UKFlag() {
 }
 
 export function CareerCounselorSection() {
+  const [submitState, setSubmitState] = useState<"idle" | "submitting" | "success" | "error">(
+    "idle",
+  );
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+
+    setSubmitState("submitting");
+
+    try {
+      await submitLeadForm(form);
+      form.reset();
+      setSubmitState("success");
+    } catch {
+      setSubmitState("error");
+    }
+  }
+
   return (
     <section className="bg-black px-5 pb-14 pt-6 sm:px-8 sm:pb-16 sm:pt-8 lg:px-10">
       <div className="mx-auto grid w-full max-w-[1100px] items-center gap-10 lg:grid-cols-[1fr_462px] lg:gap-16">
@@ -37,7 +60,7 @@ export function CareerCounselorSection() {
             </h2>
             <div className="mt-6 h-px bg-white/12" />
 
-            <form className="mt-6 space-y-5">
+            <form className="mt-6 space-y-5" onSubmit={handleSubmit}>
               <label className="block">
                 <span className="mb-2.5 block text-xs font-medium text-white">
                   Name <span className="text-[#ff6533]">*</span>
@@ -46,6 +69,7 @@ export function CareerCounselorSection() {
                   className="h-10 w-full rounded-[7px] border border-white/45 bg-[#1f1f1f] px-4 text-sm text-white outline-none transition placeholder:text-zinc-500 focus:border-[#ff7447] focus:ring-2 focus:ring-[#ff7447]/25"
                   name="name"
                   placeholder="Enter name"
+                  required
                   type="text"
                 />
               </label>
@@ -58,6 +82,7 @@ export function CareerCounselorSection() {
                   className="h-10 w-full rounded-[7px] border border-white/45 bg-[#1f1f1f] px-4 text-sm text-white outline-none transition placeholder:text-zinc-500 focus:border-[#ff7447] focus:ring-2 focus:ring-[#ff7447]/25"
                   name="email"
                   placeholder="Enter email"
+                  required
                   type="email"
                 />
               </label>
@@ -72,6 +97,7 @@ export function CareerCounselorSection() {
                     className="min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-zinc-500"
                     name="phone"
                     placeholder="Enter phone number"
+                    required
                     type="tel"
                   />
                 </div>
@@ -81,15 +107,17 @@ export function CareerCounselorSection() {
                 <legend className="mb-3 text-xs font-medium text-white">
                   Experience <span className="text-[#ff6533]">*</span>
                 </legend>
-                {audienceOptions.map((option) => (
+                {audienceOptions.map((option, index) => (
                   <label
                     className="flex cursor-pointer items-center gap-3 text-[15px] leading-5 text-white"
                     key={option}
                   >
                     <input
                       className="size-4 accent-[#ff6533]"
+                      defaultChecked={index === 1}
                       name="career-experience"
                       type="radio"
+                      value={option}
                     />
                     <span>{option}</span>
                   </label>
@@ -97,11 +125,26 @@ export function CareerCounselorSection() {
               </fieldset>
 
               <button
-                className="h-12 w-full rounded-[7px] border border-white bg-transparent text-base font-bold text-white transition hover:bg-white hover:text-black"
+                className="h-12 w-full rounded-[7px] border border-white bg-transparent text-base font-bold text-white transition hover:bg-white hover:text-black disabled:cursor-not-allowed disabled:opacity-70"
+                disabled={submitState === "submitting"}
                 type="submit"
               >
-                Register for the Webinar
+                {submitState === "submitting"
+                  ? "Registering..."
+                  : "Register for the Webinar"}
               </button>
+
+              {submitState === "success" ? (
+                <p aria-live="polite" className="text-xs font-medium text-emerald-200">
+                  Registration submitted. We&apos;ll contact you soon.
+                </p>
+              ) : null}
+
+              {submitState === "error" ? (
+                <p aria-live="polite" className="text-xs font-medium text-[#ffb199]">
+                  Submission failed. Please try again.
+                </p>
+              ) : null}
 
               <p className="text-[9px] leading-[1.35] text-zinc-500 sm:text-[10px]">
                 I authorise Brit Institute to contact me with webinar updates &amp; offers

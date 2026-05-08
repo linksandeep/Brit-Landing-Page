@@ -1,6 +1,10 @@
+"use client";
+
+import { type FormEvent, useState } from "react";
 import Image from "next/image";
 
 import { audienceOptions, toolBadges } from "@/app/data/landing-page";
+import { submitLeadForm } from "@/app/lib/lead-form";
 
 const countryDialCodes = [
   { code: "+44", flag: "🇬🇧", name: "United Kingdom" },
@@ -16,6 +20,25 @@ const countryDialCodes = [
 ];
 
 export function HeroSection() {
+  const [submitState, setSubmitState] = useState<"idle" | "submitting" | "success" | "error">(
+    "idle",
+  );
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+
+    setSubmitState("submitting");
+
+    try {
+      await submitLeadForm(form);
+      form.reset();
+      setSubmitState("success");
+    } catch {
+      setSubmitState("error");
+    }
+  }
+
   return (
     <section className="hero-noise relative px-5 py-8 sm:px-8 sm:py-9 lg:px-10 lg:py-10">
       <div className="mx-auto grid w-full max-w-[1064px] items-stretch gap-5 lg:grid-cols-[1.15fr_0.84fr]">
@@ -71,7 +94,7 @@ export function HeroSection() {
             <span className="text-base font-normal text-white/90">for 16 May 2026</span>
           </h2>
 
-          <form className="mt-5 space-y-3">
+          <form className="mt-5 space-y-3" onSubmit={handleSubmit}>
             <label className="block">
               <span className="mb-1.5 block text-xs text-white/85">
                 Name <span className="text-[#ff6a35]">*</span>
@@ -80,6 +103,7 @@ export function HeroSection() {
                 className="hero-input"
                 name="name"
                 placeholder="Enter name"
+                required
                 type="text"
               />
             </label>
@@ -88,7 +112,13 @@ export function HeroSection() {
               <span className="mb-1.5 block text-xs text-white/85">
                 Email <span className="text-[#ff6a35]">*</span>
               </span>
-              <input className="hero-input" name="email" placeholder="Email" type="email" />
+              <input
+                className="hero-input"
+                name="email"
+                placeholder="Email"
+                required
+                type="email"
+              />
             </label>
 
             <label className="block">
@@ -115,6 +145,7 @@ export function HeroSection() {
                   className="min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-white/86"
                   name="phone"
                   placeholder="Phone number"
+                  required
                   type="tel"
                 />
               </div>
@@ -136,6 +167,7 @@ export function HeroSection() {
                     className="size-4 accent-[#6ea8ff]"
                     defaultChecked={index === 1}
                     name="experience"
+                    value={option}
                     type="radio"
                   />
                   <span>{option}</span>
@@ -144,11 +176,30 @@ export function HeroSection() {
             </fieldset>
 
             <button
-              className="mt-4 h-11 w-full rounded-lg bg-[#ff6838] text-base font-bold text-white shadow-[0_16px_32px_rgba(255,104,56,0.18)] transition hover:bg-[#ff7b50]"
+              className="mt-4 h-11 w-full rounded-lg bg-[#ff6838] text-base font-bold text-white shadow-[0_16px_32px_rgba(255,104,56,0.18)] transition hover:bg-[#ff7b50] disabled:cursor-not-allowed disabled:opacity-70"
+              disabled={submitState === "submitting"}
               type="submit"
             >
-              Register for <span className="line-through">£9</span> FREE
+              {submitState === "submitting" ? (
+                "Registering..."
+              ) : (
+                <>
+                  Register for <span className="line-through">£9</span> FREE
+                </>
+              )}
             </button>
+
+            {submitState === "success" ? (
+              <p aria-live="polite" className="text-xs font-medium text-emerald-200">
+                Registration submitted. We&apos;ll contact you soon.
+              </p>
+            ) : null}
+
+            {submitState === "error" ? (
+              <p aria-live="polite" className="text-xs font-medium text-[#ffb199]">
+                Submission failed. Please try again.
+              </p>
+            ) : null}
 
             <p className="text-[11px] leading-[1.35] text-white/60">
               I authorise Brit Institute to contact me with webinar updates & offers via
