@@ -161,7 +161,7 @@ function SocialIcons() {
 
 export function FooterSection() {
   return (
-    <footer className="bg-black px-5 pb-20 pt-16 sm:px-8 sm:pt-18 lg:px-10">
+    <footer className="bg-black px-5 pb-20 pt-16 sm:px-8 sm:pt-[72px] lg:px-10">
       <div className="mx-auto w-full max-w-[980px]">
         <div className="grid gap-12 md:grid-cols-[1.5fr_0.8fr_0.95fr_0.8fr] md:gap-10">
           <div>
