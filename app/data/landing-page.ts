@@ -1,10 +1,34 @@
 export const toolBadges = [
-  { name: "Power BI", mark: "P", tone: "text-yellow-300" },
-  { name: "SQL", mark: "S", tone: "text-lime-300" },
-  { name: "Excel", mark: "E", tone: "text-emerald-400" },
-  { name: "Chat GPT", mark: "C", tone: "text-white" },
-  { name: "Copilot", mark: "C+", tone: "text-teal-300" },
-  { name: "Gemini", mark: "G", tone: "text-sky-300" },
+  {
+    name: "Power BI",
+    logo: "/tool-logos/power-bi.svg",
+    logoAlt: "Power BI logo",
+  },
+  {
+    name: "SQL",
+    logo: "/tool-logos/sql-server.svg",
+    logoAlt: "SQL Server logo",
+  },
+  {
+    name: "Excel",
+    logo: "/tool-logos/excel.svg",
+    logoAlt: "Microsoft Excel logo",
+  },
+  {
+    name: "ChatGPT",
+    logo: "/tool-logos/chatgpt.svg",
+    logoAlt: "ChatGPT logo",
+  },
+  {
+    name: "Copilot",
+    logo: "/tool-logos/copilot.png",
+    logoAlt: "Microsoft Copilot logo",
+  },
+  {
+    name: "Gemini",
+    logo: "/tool-logos/gemini.svg",
+    logoAlt: "Google Gemini logo",
+  },
 ];
 
 export const audienceOptions = [

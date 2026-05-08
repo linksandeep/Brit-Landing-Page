@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { audienceOptions, toolBadges } from "@/app/data/landing-page";
 
 const countryDialCodes = [
@@ -42,12 +44,16 @@ export function HeroSection() {
             <div className="mt-3 flex flex-wrap gap-3">
               {toolBadges.map((tool) => (
                 <span
-                  className="flex h-10 min-w-[116px] items-center justify-center gap-1.5 rounded-full bg-black px-5 text-sm font-semibold text-white shadow-[0_10px_22px_rgba(0,0,0,0.22)]"
+                  className="flex h-10 min-w-[126px] items-center justify-center gap-2 rounded-full bg-black px-4 text-sm font-semibold text-white shadow-[0_10px_22px_rgba(0,0,0,0.22)]"
                   key={tool.name}
                 >
-                  <span className={`text-base font-black ${tool.tone}`}>
-                    {tool.mark}
-                  </span>
+                  <Image
+                    alt={tool.logoAlt}
+                    className="size-5 object-contain"
+                    height={24}
+                    src={tool.logo}
+                    width={24}
+                  />
                   {tool.name}
                 </span>
               ))}
