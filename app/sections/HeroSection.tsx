@@ -68,7 +68,7 @@ export function HeroSection() {
           className="relative rounded-[22px] border border-white/25 bg-[linear-gradient(150deg,rgba(63,91,130,0.84),rgba(44,74,116,0.86)_54%,rgba(36,57,87,0.88))] p-6 shadow-[0_25px_90px_rgba(0,0,0,0.30)] backdrop-blur md:p-7 lg:min-h-[560px]"
         >
           <h2 className="text-[22px] font-semibold tracking-[0] text-white">
-            Book a <span className="text-[#ff6a35]">free live webinar</span>{" "}
+            Secure a <span className="text-[#ff6a35]">career consultation</span>{" "}
             <span className="text-base font-normal text-white/90">to know more</span>
           </h2>
 

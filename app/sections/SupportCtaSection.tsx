@@ -69,7 +69,7 @@ export function SupportCtaSection() {
             className="rounded-lg bg-[#ff6533] px-7 py-3.5 text-center text-base font-bold text-white shadow-[0_18px_38px_rgba(255,101,51,0.26)] transition hover:bg-[#ff7447]"
             href="#register"
           >
-            Book a free webinar
+            Secure Career Consultation
           </a>
         </div>
       </div>
