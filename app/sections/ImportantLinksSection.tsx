@@ -177,7 +177,7 @@ function LinksRow({ links }: { links: ImportantLink[] }) {
         <a
           className="inline-flex items-center text-[12px] font-bold leading-5 text-zinc-300 underline decoration-zinc-500 underline-offset-2 transition hover:text-white hover:decoration-white sm:text-[13px]"
           href={link.href}
-          key={link.href}
+          key={`${link.href}-${link.label}`}
         >
           {link.label}
           {index < links.length - 1 ? (

@@ -85,10 +85,8 @@ export function ProjectsSection() {
 
   return (
     <section
-      id="curriculum"
-      className="relative scroll-mt-14 overflow-hidden border-t border-white/10 bg-black px-5 py-16 sm:px-8 sm:py-20 lg:px-10"
+      className="relative overflow-hidden border-t border-white/10 bg-black px-5 py-16 sm:px-8 sm:py-20 lg:px-10"
     >
-      <span id="faqs" className="absolute top-0" aria-hidden="true" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_6%,rgba(154,49,255,0.42),transparent_30%),radial-gradient(circle_at_50%_72%,rgba(115,31,194,0.22),transparent_42%)]" />
       <div className="absolute inset-x-0 top-0 h-px bg-white/12" />
 

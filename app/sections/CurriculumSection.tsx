@@ -2,7 +2,10 @@ import { syllabusWeeks } from "@/app/data/landing-page";
 
 export function CurriculumSection() {
   return (
-    <section className="relative overflow-hidden border-t border-white/10 bg-black px-5 py-16 sm:px-8 sm:py-20 lg:px-10">
+    <section
+      id="curriculum"
+      className="relative scroll-mt-14 overflow-hidden border-t border-white/10 bg-black px-5 py-16 sm:px-8 sm:py-20 lg:px-10"
+    >
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.075)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.075)_1px,transparent_1px)] bg-[size:96px_96px] opacity-35" />
       <div className="pointer-events-none absolute inset-x-0 -top-28 h-[270px] bg-[radial-gradient(circle_at_50%_0%,rgba(157,54,255,0.62),transparent_46%)]" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black to-transparent" />

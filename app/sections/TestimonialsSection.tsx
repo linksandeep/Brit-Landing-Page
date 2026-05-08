@@ -6,7 +6,7 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="bg-black px-5 py-14 sm:px-8 sm:py-16 lg:px-10"
+      className="scroll-mt-14 bg-black px-5 py-14 sm:px-8 sm:py-16 lg:px-10"
     >
       <div className="mx-auto w-full max-w-[944px]">
         <article className="grid overflow-hidden rounded-[24px] border border-white/20 bg-[#151515] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.48)] md:grid-cols-[minmax(0,498px)_1fr] md:gap-9 lg:p-5">
