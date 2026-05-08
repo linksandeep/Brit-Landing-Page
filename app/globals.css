@@ -145,7 +145,35 @@ html {
 
 .brit-institute-shimmer {
   display: inline-block;
-  color: #ffffff;
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 24, 24, 0.76) 0%,
+    rgba(28, 24, 24, 0.76) 34%,
+    rgba(115, 115, 115, 0.55) 43%,
+    rgba(255, 255, 255, 0.96) 50%,
+    rgba(115, 115, 115, 0.55) 57%,
+    rgba(28, 24, 24, 0.76) 66%,
+    rgba(28, 24, 24, 0.76) 100%
+  );
+  background-position: 0% 50%;
+  background-size: 260% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
+  animation: brit-institute-scan 7s ease-in-out infinite alternate;
+  will-change: background-position;
+}
+
+@keyframes brit-institute-scan {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes curriculum-scroll {
@@ -170,7 +198,8 @@ html {
 
 @media (prefers-reduced-motion: reduce) {
   .curriculum-marquee,
-  .faculty-marquee {
+  .faculty-marquee,
+  .brit-institute-shimmer {
     animation: none;
   }
 }
