@@ -4,7 +4,7 @@ export function Header() {
       <a
         className="flex items-center gap-2"
         href="#"
-        aria-label="Brit Institute job bootcamp"
+        aria-label="Brit Institute webinar"
       >
         <span className="grid size-7 place-items-center rounded-full bg-white shadow-sm">
           <span className="rounded-[4px] bg-[#ff6a35] px-1.5 py-0.5 text-[12px] font-black leading-none text-white">
@@ -16,7 +16,7 @@ export function Header() {
             Brit <span className="font-light">Institute</span>
           </span>
           <span className="block text-center text-[11px] font-bold tracking-[0.05em] text-zinc-300">
-            /job-bootcamp
+            /webinar
           </span>
         </span>
       </a>
