@@ -41,7 +41,7 @@ export const audienceOptions = [
 
 export const programStats = [
   { value: "6 months", label: "Intensive job bootcamp" },
-  { value: "£39K avg", label: "UK data analyst salary benchmark" },
+  { value: "£40K avg", label: "UK data analyst salary benchmark" },
   { value: "£52K+", label: "Senior data analyst salary benchmark" },
   { value: "80K+", label: "Learners enrolled" },
 ];
@@ -216,7 +216,7 @@ export const faqItems = [
     question:
       "What is the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
-      "The Data Analytics with GenAI Program by Brit Institute Job Bootcamp is an intensive, hands-on training program designed to equip learners with industry-relevant data analytics skills for the UK job market. You learn Excel, SQL, statistics, dashboards, storytelling, and GenAI workflows, ensuring expertise in data cleaning, analysis, visualization, and business decision-making. The program follows an AI-infused curriculum, real-world projects, 1:1 mentorship, and expert-led sessions. With UK data analyst salaries commonly benchmarked around £35K-£39K and senior roles around £52K+, this bootcamp is ideal for anyone looking to break into analytics or transition to a data-driven role.",
+      "The Data Analytics with GenAI Program by Brit Institute Job Bootcamp is an intensive, hands-on training program designed to equip learners with industry-relevant data analytics skills for the UK job market. You learn Excel, SQL, statistics, dashboards, storytelling, and GenAI workflows, ensuring expertise in data cleaning, analysis, visualization, and business decision-making. The program follows an AI-infused curriculum, real-world projects, 1:1 mentorship, and expert-led sessions. With UK data analyst salaries commonly benchmarked around £40K-£42K and senior roles around £52K+, this bootcamp is ideal for anyone looking to break into analytics or transition to a data-driven role.",
   },
   {
     question:
@@ -289,7 +289,7 @@ export const faqItems = [
     question:
       "What salary range can I target after completing the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
-      "UK data analyst salaries are commonly benchmarked around £35K-£39K per year, with junior roles often in the mid-£20K range and senior data analyst roles around £52K+ depending on location, experience, and employer.",
+      "UK data analyst salaries are commonly benchmarked around £40K-£42K per year, with junior roles often in the mid-£20K range and senior data analyst roles around £52K+ depending on location, experience, and employer.",
   },
   {
     question: "How many domain expert sessions and mock interviews will I have?",
