@@ -15,20 +15,20 @@ const countryDialCodes = [
 
 export function HeroSection() {
   return (
-    <section className="hero-noise relative min-h-[calc(100vh-68px)] px-5 py-10 sm:px-8 lg:px-10 lg:py-14">
+    <section className="hero-noise relative px-5 py-8 sm:px-8 sm:py-9 lg:px-10 lg:py-10">
       <div className="mx-auto grid w-full max-w-[1064px] items-stretch gap-5 lg:grid-cols-[1.15fr_0.84fr]">
-        <section className="rounded-[22px] border border-white/12 bg-[linear-gradient(140deg,rgba(38,15,68,0.92),rgba(15,24,83,0.92)_58%,rgba(33,63,129,0.78))] p-8 shadow-[0_25px_90px_rgba(0,0,0,0.28)] sm:p-11 lg:min-h-[610px]">
-          <h1 className="max-w-[560px] text-4xl font-semibold leading-[1.28] tracking-[0] text-white sm:text-[42px]">
+        <section className="rounded-[22px] border border-white/12 bg-[linear-gradient(140deg,rgba(38,15,68,0.92),rgba(15,24,83,0.92)_58%,rgba(33,63,129,0.78))] p-7 shadow-[0_25px_90px_rgba(0,0,0,0.28)] sm:p-8 lg:min-h-[560px] lg:p-9">
+          <h1 className="max-w-[560px] text-4xl font-semibold leading-[1.24] tracking-[0] text-white sm:text-[38px]">
             Data Analytics with GenAI Program by Brit Institute Job
             Bootcamp
           </h1>
 
-          <div className="mt-14 space-y-8 text-[17px] leading-7 text-white/92">
-            <div className="grid grid-cols-[34px_1fr] gap-6">
+          <div className="mt-10 space-y-6 text-base leading-6 text-white/92">
+            <div className="grid grid-cols-[34px_1fr] gap-5">
               <span className="mt-1 size-2 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
               <p>Designed for professionals to stand out in the data job market</p>
             </div>
-            <div className="grid grid-cols-[34px_1fr] gap-6">
+            <div className="grid grid-cols-[34px_1fr] gap-5">
               <span className="mt-1 size-2 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
               <p>
                 AI infused curriculum that helps you master analytics tools and
@@ -37,12 +37,12 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-7">
             <p className="text-base font-bold text-white">Master 20+ analytics tools</p>
-            <div className="mt-3 flex flex-wrap gap-4">
+            <div className="mt-3 flex flex-wrap gap-3">
               {toolBadges.map((tool) => (
                 <span
-                  className="flex h-11 min-w-[116px] items-center justify-center gap-1.5 rounded-full bg-black px-5 text-sm font-semibold text-white shadow-[0_10px_22px_rgba(0,0,0,0.22)]"
+                  className="flex h-10 min-w-[116px] items-center justify-center gap-1.5 rounded-full bg-black px-5 text-sm font-semibold text-white shadow-[0_10px_22px_rgba(0,0,0,0.22)]"
                   key={tool.name}
                 >
                   <span className={`text-base font-black ${tool.tone}`}>
@@ -57,14 +57,14 @@ export function HeroSection() {
 
         <section
           id="register"
-          className="relative rounded-[22px] border border-white/25 bg-[linear-gradient(150deg,rgba(63,91,130,0.84),rgba(44,74,116,0.86)_54%,rgba(36,57,87,0.88))] p-7 shadow-[0_25px_90px_rgba(0,0,0,0.30)] backdrop-blur md:p-8 lg:min-h-[610px]"
+          className="relative rounded-[22px] border border-white/25 bg-[linear-gradient(150deg,rgba(63,91,130,0.84),rgba(44,74,116,0.86)_54%,rgba(36,57,87,0.88))] p-6 shadow-[0_25px_90px_rgba(0,0,0,0.30)] backdrop-blur md:p-7 lg:min-h-[560px]"
         >
-          <h2 className="text-2xl font-semibold tracking-[0] text-white">
+          <h2 className="text-[22px] font-semibold tracking-[0] text-white">
             Book a <span className="text-[#ff6a35]">free live webinar</span>{" "}
             <span className="text-base font-normal text-white/90">to know more</span>
           </h2>
 
-          <form className="mt-7 space-y-4">
+          <form className="mt-5 space-y-3">
             <label className="block">
               <span className="mb-1.5 block text-xs text-white/85">
                 Name <span className="text-[#ff6a35]">*</span>
@@ -118,7 +118,7 @@ export function HeroSection() {
               </p>
             </label>
 
-            <fieldset className="space-y-3 pt-0.5">
+            <fieldset className="space-y-2.5 pt-0.5">
               <legend className="sr-only">Experience</legend>
               {audienceOptions.map((option, index) => (
                 <label
@@ -137,7 +137,7 @@ export function HeroSection() {
             </fieldset>
 
             <button
-              className="mt-5 h-12 w-full rounded-lg bg-[#ff6838] text-base font-bold text-white shadow-[0_16px_32px_rgba(255,104,56,0.18)] transition hover:bg-[#ff7b50]"
+              className="mt-4 h-11 w-full rounded-lg bg-[#ff6838] text-base font-bold text-white shadow-[0_16px_32px_rgba(255,104,56,0.18)] transition hover:bg-[#ff7b50]"
               type="submit"
             >
               Register for <span className="line-through">£9</span> FREE
