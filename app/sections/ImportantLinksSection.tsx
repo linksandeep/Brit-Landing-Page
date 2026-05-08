@@ -104,6 +104,24 @@ const webinarBadges = [
   "Brit Institute",
 ];
 
+const aboutHighlights = [
+  {
+    title: "Practical learning",
+    description:
+      "Sessions focus on the real workflow behind analytics roles: understanding business questions, working with data, building dashboards, and presenting clear insights.",
+  },
+  {
+    title: "Career direction",
+    description:
+      "Learners get guidance on tools, portfolio projects, interview preparation, and the steps needed to move from beginner level to job-ready confidence.",
+  },
+  {
+    title: "Modern AI skills",
+    description:
+      "Brit Institute blends core analytics skills with GenAI workflows so learners can use AI for faster analysis, reporting, and storytelling without skipping fundamentals.",
+  },
+];
+
 function LinksRow({ links }: { links: ImportantLink[] }) {
   return (
     <div className="flex flex-wrap gap-x-3 gap-y-2">
@@ -195,6 +213,49 @@ export function ImportantLinksSection() {
                   {badge}
                 </span>
               ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-14 border-t border-white/20 pt-10">
+          <div className="grid gap-7 md:grid-cols-[152px_1fr]">
+            <h2 className="text-[25px] font-bold leading-tight tracking-[0] text-white sm:text-[28px]">
+              About BRIT Institute
+            </h2>
+
+            <div>
+              <div className="space-y-5 text-[15px] font-medium leading-7 text-zinc-300 sm:text-[16px]">
+                <p>
+                  BRIT Institute is a career-focused learning platform for
+                  students, fresh graduates, and working professionals who want
+                  to build industry-ready skills in data analytics, business
+                  intelligence, and AI-assisted workflows.
+                </p>
+                <p>
+                  The institute designs its sessions around practical learning:
+                  tool demonstrations, guided projects, career roadmaps, live
+                  Q&A, and mentorship-led support. Instead of only explaining
+                  concepts, Brit Institute helps learners understand how Excel,
+                  SQL, Power BI, dashboards, and GenAI fit together in real
+                  analytics work.
+                </p>
+              </div>
+
+              <div className="mt-7 grid gap-4 sm:grid-cols-3">
+                {aboutHighlights.map((highlight) => (
+                  <div
+                    className="rounded-[8px] border border-white/15 bg-white/[0.04] p-4"
+                    key={highlight.title}
+                  >
+                    <h3 className="text-[13px] font-bold leading-5 text-white">
+                      {highlight.title}
+                    </h3>
+                    <p className="mt-2 text-[12px] font-medium leading-5 text-zinc-300">
+                      {highlight.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
