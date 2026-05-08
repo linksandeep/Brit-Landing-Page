@@ -64,6 +64,12 @@ const facultyMembers = [
     logo: "/faculty/deepak-company-logo.webp",
     company: "Deepak Chandani company",
   },
+  {
+    name: "Alok Pandey",
+    role: "Senior Data Engineer",
+    image: "/faculty/alok.jpeg",
+    company: "Stryker",
+  },
 ];
 
 const carouselMembers = [...facultyMembers, ...facultyMembers];
@@ -117,15 +123,21 @@ export function FacultySection() {
 
                   <div className="mt-5 h-px w-full bg-white/16" />
 
-                  <div className="relative mt-5 h-7 w-[104px]">
-                    <Image
-                      alt={`${member.company} logo`}
-                      className="object-contain object-left"
-                      fill
-                      sizes="104px"
-                      src={member.logo}
-                    />
-                  </div>
+                  {member.logo ? (
+                    <div className="relative mt-5 h-7 w-[104px]">
+                      <Image
+                        alt={`${member.company} logo`}
+                        className="object-contain object-left"
+                        fill
+                        sizes="104px"
+                        src={member.logo}
+                      />
+                    </div>
+                  ) : (
+                    <p className="mt-5 text-[16px] font-bold leading-7 tracking-[0] text-white">
+                      {member.company}
+                    </p>
+                  )}
                 </div>
               </div>
             </article>
