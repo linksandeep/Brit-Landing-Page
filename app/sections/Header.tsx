@@ -25,7 +25,7 @@ export function Header() {
         href="#register"
         className="rounded-lg bg-[#ff6838] px-5 py-3 text-sm font-bold text-white shadow-[0_10px_30px_rgba(255,104,56,0.22)] transition hover:bg-[#ff7b50] sm:px-7"
       >
-        Request callback
+        Register free
       </a>
     </header>
   );

@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const assistanceItems = [
   {
-    title: "Curated Job boards",
-    description: "400+ live jobs & new jobs added everyday",
+    title: "Beginner-friendly roadmap",
+    description: "Know the exact tools, projects, and habits to focus on first",
   },
   {
-    title: "Resume, LinkedIn and Github profile building",
-    description: "Get tailored feedback on improving all your profile",
+    title: "Portfolio and profile direction",
+    description: "Learn what hiring teams expect from analytics candidates",
   },
 ];
 
@@ -45,7 +45,7 @@ export function JobAssistanceSection() {
             className="rounded-lg bg-[#ff6533] px-7 py-3.5 text-center text-base font-bold text-white shadow-[0_18px_38px_rgba(255,101,51,0.26)] transition hover:bg-[#ff7447]"
             href="#register"
           >
-            Secure Career Consultation
+            Save My Webinar Seat
           </a>
         </div>
       </div>

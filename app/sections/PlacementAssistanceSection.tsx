@@ -51,7 +51,7 @@ export function PlacementAssistanceSection() {
     >
       <div className="mx-auto w-full max-w-[1050px]">
         <h2 className="max-w-[690px] text-[30px] font-bold leading-[1.28] tracking-[0] text-white sm:text-[36px]">
-          World class placement assistance that helped 30,000+ students
+          See where data analytics and GenAI skills can take your career
         </h2>
 
         <div className="mt-20 grid grid-cols-2 overflow-hidden sm:grid-cols-3 lg:grid-cols-5">

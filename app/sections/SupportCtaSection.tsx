@@ -1,12 +1,12 @@
 const supportItems = [
   {
-    title: "Get instant Doubt Support",
-    description: "24/7 support with teaching assistants & GenAI mentor",
+    title: "Ask questions live",
+    description: "Bring your career, tools, and learning doubts to the webinar Q&A.",
   },
   {
-    title: "Interview prep like a pro with AI",
+    title: "Leave with a career roadmap",
     description:
-      "Practice interviews, refine your resume, and improve with AI-powered feedback.",
+      "Understand what to learn first, what to build, and how GenAI fits into analytics work.",
   },
 ];
 
@@ -69,7 +69,7 @@ export function SupportCtaSection() {
             className="rounded-lg bg-[#ff6533] px-7 py-3.5 text-center text-base font-bold text-white shadow-[0_18px_38px_rgba(255,101,51,0.26)] transition hover:bg-[#ff7447]"
             href="#register"
           >
-            Secure Career Consultation
+            Register for Free
           </a>
         </div>
       </div>

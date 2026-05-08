@@ -40,10 +40,10 @@ export const audienceOptions = [
 ];
 
 export const programStats = [
-  { value: "6 months", label: "Intensive job bootcamp" },
-  { value: "£40K avg", label: "UK data analyst salary benchmark" },
-  { value: "£52K+", label: "Senior data analyst salary benchmark" },
-  { value: "80K+", label: "Learners enrolled" },
+  { value: "2 hours", label: "Live practical webinar" },
+  { value: "16 May", label: "Saturday, 2026" },
+  { value: "FREE", label: "Limited-seat registration" },
+  { value: "20+", label: "Analytics and GenAI tools covered" },
 ];
 
 export const aiJobStats = [
@@ -70,75 +70,55 @@ export const successStory = {
 };
 
 export const sectionTabs = [
-  { label: "Curriculum", href: "#curriculum" },
-  { label: "Placements", href: "#placements" },
-  { label: "10X club", href: "#ten-x-club" },
-  { label: "Faculty", href: "#faculty" },
+  { label: "Agenda", href: "#curriculum" },
+  { label: "Career paths", href: "#placements" },
+  { label: "Community", href: "#ten-x-club" },
+  { label: "Expert", href: "#faculty" },
   { label: "Testimonials", href: "#testimonials" },
-  { label: "Plans", href: "#plans" },
+  { label: "Register", href: "#plans" },
   { label: "FAQs", href: "#faqs" },
 ];
 
 export const planComparisonRows = [
   {
-    perk: "Industry-standard curriculum by expert",
-    bootcamp: true,
-    microsoft: true,
+    perk: "2-hour live Data Analytics with GenAI webinar",
+    webinar: true,
+    resources: true,
   },
   {
-    perk: "Self Paced Classes + 1:1 live doubt support (Unlimited)",
-    bootcamp: true,
-    microsoft: true,
+    perk: "Practical Excel, SQL, Power BI and GenAI workflow demo",
+    webinar: true,
+    resources: true,
   },
   {
-    perk: "Relationship manager",
-    bootcamp: true,
-    microsoft: true,
+    perk: "Career roadmap for moving into data analytics",
+    webinar: true,
+    resources: true,
   },
   {
-    perk: "Dedicated, focused, personalised placement assistance.",
-    bootcamp: true,
-    microsoft: true,
+    perk: "Live Q&A with the Brit Institute team",
+    webinar: true,
+    resources: true,
   },
   {
-    perk: "Peer Interaction and network building",
-    bootcamp: true,
-    microsoft: true,
+    perk: "Webinar reminder and joining link",
+    webinar: true,
+    resources: true,
   },
   {
-    perk: "1:1 Domain Expert Sessions",
-    bootcamp: true,
-    microsoft: true,
+    perk: "Downloadable analytics roadmap",
+    webinar: false,
+    resources: true,
   },
   {
-    perk: "Full fees refundable within 7 days",
-    bootcamp: true,
-    microsoft: true,
+    perk: "Tool checklist for beginners",
+    webinar: false,
+    resources: true,
   },
   {
-    perk: "Access Microsoft certification learning content",
-    bootcamp: false,
-    microsoft: true,
-  },
-  {
-    perk: "Hands-on projects aligned with Microsoft tools",
-    bootcamp: false,
-    microsoft: true,
-  },
-  {
-    perk: "Microsoft certification support",
-    bootcamp: false,
-    microsoft: true,
-  },
-  {
-    perk: "Brit Institute Certifications",
-    bootcamp: true,
-    microsoft: true,
-  },
-  {
-    perk: "Hands-on projects by Brit Institute",
-    bootcamp: true,
-    microsoft: true,
+    perk: "Certificate guidance for next learning steps",
+    webinar: false,
+    resources: true,
   },
 ];
 
@@ -192,130 +172,130 @@ export const aiCurriculumTools = [
 
 export const syllabusWeeks = [
   {
-    week: "Week 1",
-    topics: ["Data analytics foundations", "Excel and spreadsheet analysis"],
+    week: "Part 1",
+    topics: ["Data analytics career roadmap", "Where Excel, SQL and Power BI fit"],
   },
   {
-    week: "Week 2",
-    topics: ["SQL for data querying", "Statistics for business insights"],
+    week: "Part 2",
+    topics: ["Live analytics workflow demo", "GenAI prompts for faster analysis"],
   },
   {
-    week: "Week 3",
-    topics: ["Power BI dashboards", "GenAI prompts for data analysis"],
+    week: "Part 3",
+    topics: ["Portfolio and interview preparation", "Live Q&A and next steps"],
   },
 ];
 
 export const faqItems = [
   {
     question:
-      "What is the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
+      "What is the Data Analytics with GenAI webinar by Brit Institute?",
     answer:
-      "The Data Analytics with GenAI Program by Brit Institute Job Bootcamp is an intensive, hands-on training program designed to equip learners with industry-relevant data analytics skills for the UK job market. You learn Excel, SQL, statistics, dashboards, storytelling, and GenAI workflows, ensuring expertise in data cleaning, analysis, visualization, and business decision-making. The program follows an AI-infused curriculum, real-world projects, 1:1 mentorship, and expert-led sessions. With UK data analyst salaries commonly benchmarked around £40K-£42K and senior roles around £52K+, this bootcamp is ideal for anyone looking to break into analytics or transition to a data-driven role.",
+      "It is a free 2-hour live webinar on 16 May 2026 for learners who want to understand data analytics careers, core tools, and practical GenAI workflows. You will see how Excel, SQL, Power BI and AI assistants fit into modern analytics work.",
   },
   {
     question:
-      "What is the refund policy for the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
-    answer: "You can request a refund within 7 days of your batch start date.",
+      "Is the webinar really free?",
+    answer: "Yes. Registration for the 2-hour live webinar is free.",
   },
   {
     question:
-      "Who is eligible to enroll in the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
+      "Who should attend this webinar?",
     answer:
-      "The Bootcamp is open to working professionals, final-year college students, and fresher graduates from any industry or domain.",
+      "Working professionals, final-year college students, fresher graduates, and career switchers from any domain can attend. No computer science degree is required.",
   },
   {
     question:
-      "What is the duration of the Data Analytics with GenAI Program by Brit Institute Job Bootcamp course?",
+      "What is the duration and date of the webinar?",
     answer:
-      "The Data Analytics Job Bootcamp with GenAI course is a structured, job-oriented program designed for comprehensive training. The duration varies based on the learning pace and includes self-paced classes, hands-on analytics projects, and placement assistance.",
+      "The webinar is a 2-hour live session scheduled for Saturday, 16 May 2026.",
   },
   {
     question:
-      "I have been working for 2 years at around £24K per year. Will I be able to move into a better data analytics role with the help of this program?",
+      "Will this webinar help me decide whether data analytics is right for me?",
     answer:
-      "Yes, this program is suitable for you. Once you are enrolled, our team will focus on upskilling you to help you land a better-paying job.",
+      "Yes. The session is designed to give you a clear view of analytics roles, required tools, project expectations, and the learning path before you commit to a longer program.",
   },
   {
     question:
-      "How good is the placement record for this Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
+      "Will there be a live project or demo?",
     answer:
-      "With placement-focused training and partnerships with hiring companies, this Data Analytics Job Bootcamp with GenAI helps learners prepare for UK data roles across finance, healthcare, retail, consulting, SaaS, and operations teams.",
+      "Yes. The webinar includes a practical walkthrough of an analytics workflow and shows how GenAI can help with analysis, reporting, and insight presentation.",
   },
   {
     question:
-      "How will I benefit from mentorship by industry experts during the Data Analytics with GenAI Program by Brit Institute Job Bootcamp course?",
+      "Will I be able to ask questions during the webinar?",
     answer:
-      "Industry mentors are experts from reputed companies who have proven competencies in specific fields and are excellent guides to help you determine your next steps in the industry. They will conduct mock interviews with you on a one-on-one basis and provide detailed feedback.",
+      "Yes. A live Q&A is included so you can ask about tools, career paths, portfolio building, and next learning steps.",
   },
   {
     question:
-      "What data analytics roles will I be eligible for after completing the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
+      "What roles will be discussed in the webinar?",
     answer:
-      "We are currently offering a Data Analytics Job Bootcamp with GenAI program, which will help you become a Data Analyst, Business Analyst, BI Analyst, Reporting Analyst, Product Analyst, or related data analytics professional in the industry.",
+      "The session covers Data Analyst, Business Analyst, BI Analyst, Reporting Analyst, Product Analyst, and related entry-level analytics roles.",
   },
   {
     question:
-      "Where are Brit Institute alumni employed after completing the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
+      "Which industries hire data analytics talent?",
     answer:
       "Our learners prepare for roles across UK employers in banking, fintech, retail, healthcare, consulting, public sector, SaaS, and fast-growing data teams.",
   },
   {
-    question: "How do I get my doubts resolved?",
+    question: "How will I receive the joining link?",
     answer:
-      "Our team of teaching assistants is available 7 days a week from 10 AM to 12 AM to provide one-on-one support. You can connect with them via chat, audio call, or screen sharing to resolve your queries.",
+      "After registration, the Brit Institute team will contact you with webinar updates, reminders, and the joining link.",
   },
   {
     question: "Do I need a computer science degree to apply?",
     answer:
-      "We believe that a degree is no substitute for determination and a passion for learning. That's why we welcome individuals from any and every background to join the Job Bootcamp.",
+      "No. The webinar is beginner-friendly and open to learners from technical and non-technical backgrounds.",
   },
   {
-    question: "Do I have to accept an offer from companies hiring?",
+    question: "Will the webinar talk about job preparation?",
     answer:
-      "Yes, if you apply for a job opening through the Brit Institute placement cell and are selected, we expect you not to back out. However, you are welcome to apply for other job openings through our placement cell, but only if the minimum annual salary offered is at least 20% higher than the job secured already by you through us. This policy applies specifically to the Brit Institute placement cell; you are free to apply for any opportunities outside of it without any restrictions.",
+      "The webinar explains how to prepare for analytics roles, what recruiters look for, and how Brit Institute supports learners in longer career-focused programs.",
   },
   {
-    question: "Where will the classes take place?",
+    question: "Where will the webinar take place?",
     answer:
-      "The classes will be conducted online. The program is designed to provide you with access to all pre-recorded content and materials, allowing you to learn from anywhere at any time. In addition to this, you will have project-based community learning, regular assignments and unlimited doubt support.",
+      "The webinar will be conducted online. You can attend from anywhere after completing registration.",
   },
   {
     question:
-      "What salary range can I target after completing the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
+      "What salary range will be discussed during the webinar?",
     answer:
       "UK data analyst salaries are commonly benchmarked around £40K-£42K per year, with junior roles often in the mid-£20K range and senior data analyst roles around £52K+ depending on location, experience, and employer.",
   },
   {
-    question: "How many domain expert sessions and mock interviews will I have?",
+    question: "Will I get recordings after the webinar?",
     answer:
-      "You will have 20 live interactive sessions with industry experts including mock interviews, project guidance and resume reviews.",
+      "Live attendance is recommended. Any recording or resource access will be shared by the Brit Institute team after registration if available.",
   },
   {
     question:
-      "When can I start appearing for placements during the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
+      "Can I join if I am completely new to analytics?",
     answer:
-      "After completing the program with the minimum requirement and clearing the placement eligibility criteria, you can start applying for all relevant opportunities.",
+      "Yes. The webinar starts with the fundamentals and then shows how modern analytics teams use tools and GenAI in practical work.",
   },
   {
-    question: "Do we provide a job guarantee?",
+    question: "Does attending the webinar guarantee a job?",
     answer:
-      "No, and please don't believe anyone who says otherwise. However, can we help you find the right job? Yes, we do. Our placement team will support you throughout the program by helping you polish your analytics portfolio and CV, practice interviewing, and work toward UK data analyst roles aligned with current market salary benchmarks.",
+      "No. The webinar is an educational session. It will help you understand the roadmap, skills, and next steps for preparing for data analytics roles.",
   },
   {
-    question: "Is there an exam for Microsoft certification and what is the eligibility?",
+    question: "Will Microsoft certification be covered?",
     answer:
-      "Yes. To earn the Microsoft certificate, you must complete the required learning modules and then clear the Microsoft certification exam. Each learner will get 2 attempts.",
+      "The webinar can touch on Microsoft-aligned tools such as Excel and Power BI, and the team can guide you on certification-focused learning options during Q&A.",
   },
   {
-    question: "Need more information around Microsoft certification learning content.",
+    question: "What should I keep ready before joining?",
     answer:
-      "You will get Microsoft certification-focused learning content aligned with data analytics workflows, including Excel, SQL, Power BI, business intelligence, and GenAI analytics practice. The learning content is available after completion of core modules and includes hands-on project work.",
+      "Keep a notebook ready for the roadmap, tools, and project ideas. A laptop is useful if you want to follow along with the workflow.",
   },
   {
     question:
-      "How is AI integrated into the Data Analytics with GenAI Program by Brit Institute Job Bootcamp?",
+      "How is AI integrated into the webinar?",
     answer:
-      "AI is deeply embedded into the curriculum. Learners use Generative AI tools throughout the program to clean data faster, generate SQL ideas, summarize datasets, automate reports, improve dashboards, and present insights like modern analytics teams do.",
+      "The webinar shows how Generative AI can help clean data faster, generate SQL ideas, summarize datasets, automate reports, improve dashboards, and present insights clearly.",
   },
   {
     question:
@@ -324,9 +304,9 @@ export const faqItems = [
       "No, you first master Excel, SQL, statistics, visualization, and business analysis fundamentals, and then use AI to boost productivity.",
   },
   {
-    question: "Will I build AI-powered analytics projects in this bootcamp?",
+    question: "Will I learn about AI-powered analytics projects?",
     answer:
-      "Yes, you'll build analytics projects that integrate GenAI features into real reporting and decision-making workflows.",
+      "Yes. You will see examples of analytics projects that integrate GenAI into reporting and decision-making workflows.",
   },
   {
     question: "How does learning AI help in getting a data analytics job?",
@@ -334,8 +314,8 @@ export const faqItems = [
       "AI skills help you analyze data faster, automate reporting, explain insights clearly, and meet modern hiring expectations.",
   },
   {
-    question: "What certificates will I receive after completing the program?",
+    question: "Will I receive a certificate for attending?",
     answer:
-      "You will receive module-wise certificates from Brit Institute (for completion and excellence), along with Microsoft certification support, as well as an NSDC certification named for the Data Analytics with GenAI Program (Professionals).",
+      "Certificate availability will be confirmed by the Brit Institute team for registered attendees.",
   },
 ];

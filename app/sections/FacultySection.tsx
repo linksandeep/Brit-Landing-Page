@@ -69,9 +69,9 @@ const facultyMembers = [
 const carouselMembers = [...facultyMembers, ...facultyMembers];
 
 const expertSupportPoints = [
-  "Get a personal relationship manager",
-  "Connect 1:1 with FAANG mentors",
-  "TA's to clear your doubts & more",
+  "Understand the analytics learning path",
+  "Ask your questions in the live Q&A",
+  "Get practical next steps after the session",
 ];
 
 export function FacultySection() {
@@ -82,7 +82,7 @@ export function FacultySection() {
           Community exclusive
         </p>
         <h2 className="mt-3 text-[30px] font-bold leading-tight tracking-[0] text-white sm:text-[34px]">
-          Weekly chats with top industry talent
+          Learn from experienced analytics mentors
         </h2>
       </div>
 
@@ -135,7 +135,7 @@ export function FacultySection() {
 
       <div id="faculty" className="scroll-mt-14 mx-auto mt-20 w-full max-w-[990px]">
         <h2 className="text-[30px] font-bold leading-tight tracking-[0] text-white sm:text-[34px]">
-          A Bootcamp crafted with care, taught by experts
+          A webinar crafted with care, taught by experts
         </h2>
 
         <article className="mt-14 rounded-[18px] border border-white/18 bg-[#151515] p-2 shadow-[0_24px_75px_rgba(0,0,0,0.46)]">
@@ -153,7 +153,7 @@ export function FacultySection() {
 
             <div className="flex flex-col justify-center lg:py-6">
               <h3 className="max-w-[390px] text-[24px] font-bold leading-[1.28] tracking-[0] text-white">
-                In house team of experts to guide you
+                In-house team of experts to guide you
               </h3>
 
               <div className="mt-12">

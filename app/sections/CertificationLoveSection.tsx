@@ -5,7 +5,7 @@ export function CertificationLoveSection() {
     <section className="bg-black px-5 pb-12 pt-10 sm:px-8 sm:pb-14 lg:px-10">
       <div className="mx-auto w-full max-w-[990px]">
         <h2 className="text-[28px] font-bold leading-tight tracking-[0] text-white sm:text-[34px]">
-          Our students loved an AI first certification
+          Learners loved our AI-first analytics training
         </h2>
 
         <div className="mt-12 grid items-center gap-10 md:grid-cols-[1.08fr_0.92fr] lg:gap-16">
@@ -22,10 +22,10 @@ export function CertificationLoveSection() {
 
           <article className="max-w-[440px] md:pt-10">
             <p className="text-[24px] font-normal leading-[1.28] tracking-[0] text-zinc-300 sm:text-[27px]">
-              Brit Institute Data Analytics course is very learner-friendly
-              and practical. The step-by-step approach and hands-on projects made
+              Brit Institute Data Analytics sessions are very learner-friendly
+              and practical. The step-by-step approach and hands-on examples made
               it easy to understand dashboards, SQL, and business insights and
-              build real-world analytics projects.
+              see how real-world analytics projects are built.
             </p>
 
             <div className="mt-9">

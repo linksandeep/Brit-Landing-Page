@@ -29,20 +29,20 @@ function PlanStatus({ included }: { included: boolean }) {
 
 const plans = [
   {
-    key: "bootcamp",
-    title: "Job Bootcamp",
-    subtitle: "to help you with a faster career transition to data analytics",
-    price: "£59",
+    key: "webinar",
+    title: "Live Webinar",
+    subtitle: "2-hour practical session on 16 May 2026",
+    price: "FREE",
   },
   {
-    key: "microsoft",
-    title: "Job Bootcamp + Microsoft",
-    subtitle: "Added Microsoft certification content",
-    price: "£69",
+    key: "resources",
+    title: "Webinar + Resources",
+    subtitle: "Live session plus beginner-friendly prep resources",
+    price: "FREE",
   },
 ] as const;
 
-const planTracks = ["Data Analytics", "GenAI Analytics"] as const;
+const planTracks = ["Data Analytics", "GenAI Workflow"] as const;
 
 export function PlansSection() {
   const [activeTrack, setActiveTrack] = useState<(typeof planTracks)[number]>("Data Analytics");
@@ -54,7 +54,7 @@ export function PlansSection() {
     >
       <div className="mx-auto w-full max-w-[1110px]">
         <div
-          aria-label="Choose plan curriculum"
+          aria-label="Choose webinar focus"
           className="mx-auto flex h-[58px] max-w-[480px] items-center rounded-full bg-[#202020] p-3"
           role="tablist"
         >
@@ -116,10 +116,10 @@ export function PlansSection() {
                     {row.perk}
                   </div>
                   <div className="px-6 py-3 text-center">
-                    <PlanStatus included={row.bootcamp} />
+                    <PlanStatus included={row.webinar} />
                   </div>
                   <div className="px-6 py-3 text-center">
-                    <PlanStatus included={row.microsoft} />
+                    <PlanStatus included={row.resources} />
                   </div>
                 </div>
               ))}
@@ -132,15 +132,15 @@ export function PlansSection() {
                   className="flex flex-col items-center px-8 pb-9 pt-5 text-center"
                   key={plan.key}
                 >
-                  <p className="text-sm font-medium text-white">Price as low as</p>
+                  <p className="text-sm font-medium text-white">Registration fee</p>
                   <p className="mt-3 text-xl font-black tracking-[0] text-white">
-                    {plan.price} / month
+                    {plan.price}
                   </p>
                   <a
                     className="mt-5 flex h-10 w-full max-w-[230px] items-center justify-center rounded-lg bg-[#ff6533] text-sm font-bold text-white transition hover:bg-[#ff7447]"
                     href="#register"
                   >
-                    Apply now
+                    Register now
                   </a>
                 </div>
               ))}
@@ -188,15 +188,15 @@ export function PlansSection() {
                     {plan.title}
                   </h3>
                   <p className="mt-2 text-sm leading-6 text-zinc-300">{plan.subtitle}</p>
-                  <p className="mt-5 text-sm font-medium text-white">Price as low as</p>
+                  <p className="mt-5 text-sm font-medium text-white">Registration fee</p>
                   <p className="mt-2 text-xl font-black tracking-[0] text-white">
-                    {plan.price} / month
+                    {plan.price}
                   </p>
                   <a
                     className="mt-5 flex h-11 items-center justify-center rounded-lg bg-[#ff6533] text-sm font-bold text-white transition hover:bg-[#ff7447]"
                     href="#register"
                   >
-                    Apply now
+                    Register now
                   </a>
                 </article>
               ))}

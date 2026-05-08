@@ -98,7 +98,7 @@ export function AiJobsSection() {
             className="rounded-lg bg-zinc-100 px-7 py-4 text-base font-bold text-black shadow-[0_16px_42px_rgba(255,255,255,0.08)] transition hover:bg-white"
             href="#register"
           >
-            Download full curriculum
+            Reserve free webinar seat
           </a>
         </div>
       </div>

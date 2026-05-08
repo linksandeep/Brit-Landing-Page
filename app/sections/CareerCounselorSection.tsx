@@ -33,7 +33,7 @@ export function CareerCounselorSection() {
         <aside className="rounded-[24px] border border-white/14 bg-[#202020] p-2 shadow-[0_24px_80px_rgba(0,0,0,0.5)]">
           <div className="rounded-[18px] border border-white/10 bg-[#171717] px-5 py-6 sm:px-7 sm:py-7">
             <h2 className="text-[18px] font-bold leading-tight tracking-[0] text-white sm:text-[19px]">
-              Reach out to our career counsellor for free
+              Reserve your free webinar seat
             </h2>
             <div className="mt-6 h-px bg-white/12" />
 
@@ -100,11 +100,11 @@ export function CareerCounselorSection() {
                 className="h-12 w-full rounded-[7px] border border-white bg-transparent text-base font-bold text-white transition hover:bg-white hover:text-black"
                 type="submit"
               >
-                Request a callback
+                Register for the Webinar
               </button>
 
               <p className="text-[9px] leading-[1.35] text-zinc-500 sm:text-[10px]">
-                I authorise Brit Institute to contact me with course updates &amp; offers
+                I authorise Brit Institute to contact me with webinar updates &amp; offers
                 via Email/SMS/Whatsapp/Call. I have read and agree to{" "}
                 <a className="underline underline-offset-2" href="#">
                   Privacy Policy

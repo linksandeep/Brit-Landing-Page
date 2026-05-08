@@ -14,7 +14,7 @@ const footerColumns = [
   {
     title: "Products",
     links: [
-      "Job Bootcamp",
+      "Live Webinars",
       "Analytics 360",
       "Professional Certifications",
       "Student Certifications",
@@ -36,7 +36,7 @@ function BritInstituteMark() {
   );
 }
 
-function BritInstituteLogo({ bootcamp = false }: { bootcamp?: boolean }) {
+function BritInstituteLogo({ webinar = false }: { webinar?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2">
       <BritInstituteMark />
@@ -44,9 +44,9 @@ function BritInstituteLogo({ bootcamp = false }: { bootcamp?: boolean }) {
         <span className="block text-[21px] font-semibold tracking-[0] text-white">
           Brit <span className="font-light text-zinc-300">Institute</span>
         </span>
-        {bootcamp ? (
+        {webinar ? (
           <span className="block text-right text-[12px] font-bold tracking-[0.03em] text-white">
-            /job-bootcamp
+            /webinar
           </span>
         ) : null}
       </span>
@@ -200,11 +200,11 @@ export function FooterSection() {
               </h2>
               <div className="mt-6 space-y-7">
                 <a
-                  aria-label="Brit Institute Job Bootcamp"
+                  aria-label="Brit Institute Webinar"
                   className="inline-flex"
                   href="#"
                 >
-                  <BritInstituteLogo bootcamp />
+                  <BritInstituteLogo webinar />
                 </a>
                 <a
                   aria-label="Analytics 360 by Brit Institute"

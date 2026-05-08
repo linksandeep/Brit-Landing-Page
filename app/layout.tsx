@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brit Institute Data Analytics with GenAI Webinar",
-  description: "Register for the free live data analytics with GenAI webinar.",
+  title: "Free Data Analytics with GenAI Webinar | 16 May 2026",
+  description:
+    "Register for Brit Institute's free 2-hour live Data Analytics with GenAI webinar on 16 May 2026.",
   icons: {
     icon: [
       {

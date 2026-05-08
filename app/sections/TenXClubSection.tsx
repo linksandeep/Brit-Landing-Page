@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const tenXClubPerks = [
   {
-    title: "Weekly talks with CXO's",
-    description: "Learn from the best in the industry by interacting with top talent",
+    title: "Learn with a serious community",
+    description: "Meet people exploring the same data analytics and AI career path",
     glow: "from-purple-600/24",
   },
   {
-    title: "Workshops, Hackathons and more",
+    title: "Webinars, workshops and more",
     description:
-      "Get a chance to network with peers and constantly improve your skillset",
+      "Get a chance to keep learning after the live session",
     glow: "from-amber-500/18",
   },
 ];
@@ -56,7 +56,7 @@ export function TenXClubSection() {
 
       <div className="relative mx-auto w-full max-w-[980px]">
         <h2 className="max-w-[560px] text-[30px] font-bold leading-tight tracking-[0] text-white sm:text-[34px]">
-          Access CN&apos;s premium Student community the 10X Club
+          Access Brit Institute&apos;s learning community after the webinar
         </h2>
 
         <div className="mt-8 overflow-hidden rounded-[20px] border border-white/20 bg-[#141414] p-2 shadow-[0_30px_86px_rgba(0,0,0,0.62),0_0_110px_rgba(154,89,38,0.16)] sm:mt-9">
@@ -95,7 +95,7 @@ export function TenXClubSection() {
             className="rounded-lg bg-[#ff6533] px-7 py-3.5 text-center text-base font-bold text-white shadow-[0_18px_38px_rgba(255,101,51,0.26)] transition hover:bg-[#ff7447]"
             href="#register"
           >
-            Secure Career Consultation
+            Join the Webinar
           </a>
         </div>
       </div>

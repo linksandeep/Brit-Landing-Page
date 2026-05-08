@@ -12,7 +12,7 @@ export function CurriculumSection() {
 
       <div className="relative mx-auto w-full max-w-[1000px]">
         <h2 className="text-[21px] font-bold leading-tight tracking-[0] text-white sm:text-2xl">
-          AI infused curriculum curated by experts
+          2-hour AI-infused webinar agenda
         </h2>
 
         <div className="mt-14 grid items-start gap-6 lg:grid-cols-[0.96fr_1.04fr]">
@@ -26,10 +26,10 @@ export function CurriculumSection() {
                 <span className="mt-1 text-3xl leading-none text-white">✦</span>
                 <div>
                   <h3 className="text-[18px] font-bold leading-tight text-white">
-                    Learn 20+ AI tools
+                    Watch 20+ analytics tools in action
                   </h3>
                   <p className="mt-3 text-base leading-6 text-zinc-400">
-                    Excel, SQL, Power BI, Chat GPT and more..
+                    Excel, SQL, Power BI, ChatGPT and more.
                   </p>
                 </div>
               </div>
@@ -39,7 +39,7 @@ export function CurriculumSection() {
           <article className="relative h-[356px] overflow-hidden rounded-[18px] border border-purple-400/24 bg-[#161616] p-8 shadow-[0_24px_70px_rgba(0,0,0,0.42)] sm:h-[356px] sm:p-9">
             <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-32 bg-gradient-to-t from-[#161616] via-[#161616]/95 to-transparent" />
             <p className="text-sm font-bold uppercase leading-none tracking-[0.08em] text-zinc-500">
-              Syllabus
+              Live agenda
             </p>
 
             <div className="relative mt-5 space-y-0">
@@ -67,13 +67,13 @@ export function CurriculumSection() {
             className="w-full rounded-lg bg-zinc-100 px-6 py-3.5 text-center text-base font-bold text-black shadow-[0_14px_36px_rgba(255,255,255,0.08)] transition hover:bg-white sm:w-auto"
             href="#register"
           >
-            View Data Analytics Brochure
+            Register for the Webinar
           </a>
           <a
             className="w-full rounded-lg bg-zinc-100 px-6 py-3.5 text-center text-base font-bold text-black shadow-[0_14px_36px_rgba(255,255,255,0.08)] transition hover:bg-white sm:w-auto"
             href="#register"
           >
-            View GenAI Analytics Brochure
+            Get Webinar Reminder
           </a>
         </div>
       </div>

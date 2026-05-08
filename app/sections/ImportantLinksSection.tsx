@@ -18,91 +18,43 @@ const importantLinks: LinkAudience[] = [
     title: "For working professionals",
     groups: [
       {
-        title: "University Approved Certification - Data Analytics",
+        title: "Free webinar - Data Analytics",
         links: [
           {
             label:
-              "Professional Certification in Data Analytics with GenAI by a university-approved partner",
-            href: "#university-approved-data-analytics-professional",
+              "2-hour Data Analytics with GenAI webinar by Brit Institute",
+            href: "#register",
           },
           {
             label:
-              "PG Certification in Data Analytics with GenAI by a university-approved partner",
-            href: "#university-approved-data-analytics-pg",
+              "Live webinar on Saturday, 16 May 2026",
+            href: "#curriculum",
           },
           {
             label:
-              "Professional Certification in Data Analytics with GenAI by a university-approved innovation hub",
-            href: "#university-approved-data-analytics-innovation",
-          },
-          {
-            label:
-              "Professional Certification in Data Analytics with GenAI by a university-approved technology hub",
-            href: "#university-approved-data-analytics-technology",
+              "Beginner-friendly analytics and GenAI career roadmap",
+            href: "#placements",
           },
         ],
       },
       {
-        title: "Job bootcamp - Data Analytics",
+        title: "What you will learn",
         links: [
           {
-            label:
-              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
-            href: "#plans",
+            label: "Excel, SQL, Power BI and dashboard workflow",
+            href: "#curriculum",
           },
           {
-            label:
-              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp with Microsoft Certification",
-            href: "#plans",
+            label: "GenAI prompts for analysis, reporting and storytelling",
+            href: "#curriculum",
           },
         ],
       },
       {
-        title: "Certification - Generative AI",
+        title: "Registration",
         links: [
           {
-            label:
-              "Advanced Certification in GenAI & Multi Agent Systems with Microsoft Certification",
-            href: "#plans",
-          },
-          {
-            label:
-              "Advanced Certification in GenAI and Multi-Agent Systems Program by Brit Institute",
-            href: "#plans",
-          },
-        ],
-      },
-      {
-        title: "University Approved Certification - Generative AI",
-        links: [
-          {
-            label:
-              "Professional Certification in GenAI and Multi-Agent Systems by a university-approved innovation hub",
-            href: "#university-approved-genai-innovation",
-          },
-          {
-            label:
-              "Advanced Certification in GenAI for Non-Tech Professionals by a university-approved technology hub",
-            href: "#university-approved-genai-technology",
-          },
-        ],
-      },
-      {
-        title: "Job bootcamp - Data Analytics",
-        links: [
-          {
-            label:
-              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
-            href: "#plans",
-          },
-        ],
-      },
-      {
-        title: "Job bootcamp - Data Analytics",
-        links: [
-          {
-            label:
-              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
+            label: "Reserve your free webinar seat",
             href: "#plans",
           },
         ],
@@ -113,47 +65,29 @@ const importantLinks: LinkAudience[] = [
     title: "For College Students",
     groups: [
       {
-        title: "University Approved Certification - Data Analytics",
+        title: "Free webinar - Data Analytics",
         links: [
           {
             label:
-              "Training and Internship Certification in Data Analytics with GenAI by a university-approved partner",
-            href: "#student-university-approved-data-analytics-training",
+              "Career roadmap for students exploring data analytics",
+            href: "#register",
           },
           {
-            label:
-              "Advanced Certification in Data Analytics with GenAI by a university-approved innovation hub",
-            href: "#student-university-approved-data-analytics-innovation",
+            label: "Portfolio ideas and beginner analytics projects",
+            href: "#curriculum",
           },
-        ],
-      },
-      {
-        title: "University Approved Certification - Generative AI",
-        links: [
           {
-            label:
-              "Advanced Certification in GenAI and Multi-Agent Systems by a university-approved innovation hub",
-            href: "#student-university-approved-genai-innovation",
+            label: "Live Q&A for students and freshers",
+            href: "#faqs",
           },
         ],
       },
       {
-        title: "University Approved Certification - Data Analytics",
+        title: "Registration",
         links: [
           {
-            label:
-              "Advanced Certification in Data Analytics with GenAI by a university-approved technology hub",
-            href: "#student-university-approved-data-analytics-technology",
-          },
-        ],
-      },
-      {
-        title: "University Approved Certification - Data Analytics",
-        links: [
-          {
-            label:
-              "Advanced Certification in Data Analytics and GenAI by a university-approved technology hub",
-            href: "#student-university-approved-data-analytics-genai",
+            label: "Register free for 16 May 2026",
+            href: "#plans",
           },
         ],
       },
@@ -161,13 +95,13 @@ const importantLinks: LinkAudience[] = [
   },
 ];
 
-const paymentBadges = [
-  "Visa",
-  "Paypal",
-  "UPI",
-  "No Cost EMI",
-  "100% Secure",
-  "Razorpay",
+const webinarBadges = [
+  "Free Seat",
+  "Online",
+  "Live Q&A",
+  "Reminder",
+  "Resource Kit",
+  "Brit Institute",
 ];
 
 function LinksRow({ links }: { links: ImportantLink[] }) {
@@ -237,12 +171,12 @@ export function ImportantLinksSection() {
 
         <div className="mt-9 grid gap-4 md:grid-cols-[152px_1fr] md:items-center">
           <p className="m-0 max-w-[200px] text-[13px] font-bold leading-5 text-white">
-            We accept payments using:
+            Webinar registration includes:
           </p>
 
           <div className="flex flex-wrap items-center justify-between gap-x-5 gap-y-3">
             <div className="flex flex-wrap items-center gap-3">
-              {paymentBadges.slice(0, 4).map((badge) => (
+              {webinarBadges.slice(0, 4).map((badge) => (
                 <span
                   className="inline-flex h-6 items-center rounded-[4px] bg-white px-3 text-[11px] font-bold leading-none text-zinc-950"
                   key={badge}
@@ -253,7 +187,7 @@ export function ImportantLinksSection() {
             </div>
 
             <div className="flex flex-wrap items-center gap-3">
-              {paymentBadges.slice(4).map((badge) => (
+              {webinarBadges.slice(4).map((badge) => (
                 <span
                   className="inline-flex h-6 items-center rounded-[4px] bg-white px-3 text-[11px] font-bold leading-none text-zinc-950"
                   key={badge}
