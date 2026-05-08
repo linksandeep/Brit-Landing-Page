@@ -60,62 +60,62 @@ export const planComparisonRows = [
   {
     perk: "Industry-standard curriculum by expert",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
   {
     perk: "Self Paced Classes + 1:1 live doubt support (Unlimited)",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
   {
     perk: "Relationship manager",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
   {
     perk: "Dedicated, focused, personalised placement assistance.",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
   {
     perk: "Peer Interaction and network building",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
   {
     perk: "1:1 Domain Expert Sessions",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
   {
     perk: "Full fees refundable within 7 days",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
   {
-    perk: "Access 3 IBM courses on IBM LMS",
+    perk: "Access Microsoft certification learning content",
     bootcamp: false,
-    ibm: true,
+    microsoft: true,
   },
   {
-    perk: "Hands-on projects by IBM",
+    perk: "Hands-on projects aligned with Microsoft tools",
     bootcamp: false,
-    ibm: true,
+    microsoft: true,
   },
   {
-    perk: "4 IBM Certifications",
+    perk: "Microsoft certification support",
     bootcamp: false,
-    ibm: true,
+    microsoft: true,
   },
   {
     perk: "Brit Institute Certifications",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
   {
     perk: "Hands-on projects by Brit Institute",
     bootcamp: true,
-    ibm: true,
+    microsoft: true,
   },
 ];
 
@@ -284,14 +284,14 @@ export const faqItems = [
       "No, and please don't believe anyone who says otherwise. However, can we help you find the right job? Yes, we do. Our placement team will support you throughout the program by helping you polish your analytics portfolio and CV, practice interviewing, and work toward UK data analyst roles aligned with current market salary benchmarks.",
   },
   {
-    question: "Is there an exam for IBM certification and what is the eligibility?",
+    question: "Is there an exam for Microsoft certification and what is the eligibility?",
     answer:
-      "Yes. To earn each IBM course certificate, you must complete the required course modules and then clear the IBM certification exam. Each learner will get 2 attempts per course.",
+      "Yes. To earn the Microsoft certificate, you must complete the required learning modules and then clear the Microsoft certification exam. Each learner will get 2 attempts.",
   },
   {
-    question: "Need more information around IBM courses.",
+    question: "Need more information around Microsoft certification learning content.",
     answer:
-      "You will receive three individual certificates corresponding to the following courses designed and delivered by IBM experts: 1. Data Analytics Fundamentals (14 hours) 2. Excel, SQL, and Data Visualization Essentials (10 hours) 3. Business Intelligence and GenAI Analytics Workflows (13 hours). Together, these courses comprise 37 hours of pre-recorded content accessible on the IBM LMS platform after completion of core modules. Each course also includes a dedicated hands-on project.",
+      "You will get Microsoft certification-focused learning content aligned with data analytics workflows, including Excel, SQL, Power BI, business intelligence, and GenAI analytics practice. The learning content is available after completion of core modules and includes hands-on project work.",
   },
   {
     question:
@@ -318,6 +318,6 @@ export const faqItems = [
   {
     question: "What certificates will I receive after completing the program?",
     answer:
-      "You will receive module-wise certificates from Brit Institute (for completion and excellence), along with industry-recognized certifications including 4 IBM* certifications, as well as an NSDC certification named for the Data Analytics with GenAI Program (Professionals).",
+      "You will receive module-wise certificates from Brit Institute (for completion and excellence), along with Microsoft certification support, as well as an NSDC certification named for the Data Analytics with GenAI Program (Professionals).",
   },
 ];

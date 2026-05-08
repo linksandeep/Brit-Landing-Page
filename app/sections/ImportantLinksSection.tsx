@@ -20,27 +20,27 @@ const importantLinks: LinkAudience[] = [
     title: "For working professionals",
     groups: [
       {
-        title: "Certification with IIT - Data Analytics",
+        title: "University Approved Certification - Data Analytics",
         links: [
           {
             label:
-              "Professional Certification in Data Analytics with GenAI by Vishlesan i-hub, IIT Patna",
-            href: "https://www.codingninjas.com/programs/data-analytics-iitp-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Professional Certification in Data Analytics with GenAI by a university-approved partner",
+            href: "#university-approved-data-analytics-professional",
           },
           {
             label:
-              "PG Certification in Data Analytics with GenAI by E&ICT Academy, IIT Guwahati",
-            href: "https://www.codingninjas.com/programs/data-analytics-iitg-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "PG Certification in Data Analytics with GenAI by a university-approved partner",
+            href: "#university-approved-data-analytics-pg",
           },
           {
             label:
-              "Professional Certification in Data Analytics with GenAI by IIT Mandi - TIH (Technology & Innovation Hub)",
-            href: "https://www.codingninjas.com/programs/data-analytics-iit-mandi-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Professional Certification in Data Analytics with GenAI by a university-approved innovation hub",
+            href: "#university-approved-data-analytics-innovation",
           },
           {
             label:
-              "Professional Certification in Data Analytics with GenAI by IITM Pravartak, TIH IIT Madras",
-            href: "https://www.codingninjas.com/programs/data-analytics-iitm-pravartak-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Professional Certification in Data Analytics with GenAI by a university-approved technology hub",
+            href: "#university-approved-data-analytics-technology",
           },
         ],
       },
@@ -54,8 +54,8 @@ const importantLinks: LinkAudience[] = [
           },
           {
             label:
-              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by IBM and Microsoft PL-300 Certification",
-            href: "https://www.codingninjas.com/programs/job-bootcamp-data-analytics-ibm?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp with Microsoft Certification",
+            href: "#plans",
           },
         ],
       },
@@ -64,8 +64,8 @@ const importantLinks: LinkAudience[] = [
         links: [
           {
             label:
-              "Advanced Certification in GenAI & Multi Agent Systems by IBM Certification",
-            href: "https://www.codingninjas.com/programs/genai-ibm-advanced-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Advanced Certification in GenAI & Multi Agent Systems with Microsoft Certification",
+            href: "#plans",
           },
           {
             label:
@@ -75,17 +75,17 @@ const importantLinks: LinkAudience[] = [
         ],
       },
       {
-        title: "Certification with IIT - Generative AI",
+        title: "University Approved Certification - Generative AI",
         links: [
           {
             label:
-              "Professional Certification in GenAI and Multi-Agent Systems by IIT Mandi - TIH (Technology & Innovation Hub)",
-            href: "https://www.codingninjas.com/programs/gen-ai-pg-iit-mandi-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Professional Certification in GenAI and Multi-Agent Systems by a university-approved innovation hub",
+            href: "#university-approved-genai-innovation",
           },
           {
             label:
-              "Advanced Certification in GenAI for Non-Tech Professionals by IITM Pravartak, TIH IIT Madras",
-            href: "https://www.codingninjas.com/programs/generative-ai-for-non-tech-professionals-iitm-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Advanced Certification in GenAI for Non-Tech Professionals by a university-approved technology hub",
+            href: "#university-approved-genai-technology",
           },
         ],
       },
@@ -115,47 +115,47 @@ const importantLinks: LinkAudience[] = [
     title: "For College Students",
     groups: [
       {
-        title: "Certification with IIT - Data Analytics",
+        title: "University Approved Certification - Data Analytics",
         links: [
           {
             label:
-              "Training and Internship Certification in Data Analytics with GenAI by Vishlesan i-hub, IIT Patna",
-            href: "https://www.codingninjas.com/programs/data-analytics-students-iitp-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Training and Internship Certification in Data Analytics with GenAI by a university-approved partner",
+            href: "#student-university-approved-data-analytics-training",
           },
           {
             label:
-              "Advanced Certification in Data Analytics with GenAI by IIT Mandi - TIH (Technology & Innovation Hub)",
-            href: "https://www.codingninjas.com/programs/data-analytics-iit-mandi-students-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
-          },
-        ],
-      },
-      {
-        title: "Certification with IIT - Generative AI",
-        links: [
-          {
-            label:
-              "Advanced Certification in GenAI and Multi-Agent Systems by IIT Mandi - TIH (Technology & Innovation Hub)",
-            href: "https://www.codingninjas.com/programs/gen-ai-students-iit-mandi-advanced-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Advanced Certification in Data Analytics with GenAI by a university-approved innovation hub",
+            href: "#student-university-approved-data-analytics-innovation",
           },
         ],
       },
       {
-        title: "Certification with IIT - Data Analytics",
+        title: "University Approved Certification - Generative AI",
         links: [
           {
             label:
-              "Advanced Certification in Data Analytics with GenAI by IITM Pravartak, TIH IIT Madras",
-            href: "https://www.codingninjas.com/careercamp/iitm-student-training-and-internship-certification-fswd/?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Advanced Certification in GenAI and Multi-Agent Systems by a university-approved innovation hub",
+            href: "#student-university-approved-genai-innovation",
           },
         ],
       },
       {
-        title: "Certification with IIT - Data Analytics",
+        title: "University Approved Certification - Data Analytics",
         links: [
           {
             label:
-              "Advanced Certification in Data Analytics and GenAI by IITM Pravartak, TIH IIT Madras",
-            href: "https://www.codingninjas.com/careercamp/iitm-student-training-and-internship-certification-dsa/?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+              "Advanced Certification in Data Analytics with GenAI by a university-approved technology hub",
+            href: "#student-university-approved-data-analytics-technology",
+          },
+        ],
+      },
+      {
+        title: "University Approved Certification - Data Analytics",
+        links: [
+          {
+            label:
+              "Advanced Certification in Data Analytics and GenAI by a university-approved technology hub",
+            href: "#student-university-approved-data-analytics-genai",
           },
         ],
       },

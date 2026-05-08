@@ -35,9 +35,9 @@ const plans = [
     price: "£59",
   },
   {
-    key: "ibm",
-    title: "Job Bootcamp + IBM",
-    subtitle: "Added IBM content (37 hrs.)",
+    key: "microsoft",
+    title: "Job Bootcamp + Microsoft",
+    subtitle: "Added Microsoft certification content",
     price: "£69",
   },
 ] as const;
@@ -119,7 +119,7 @@ export function PlansSection() {
                     <PlanStatus included={row.bootcamp} />
                   </div>
                   <div className="px-6 py-3 text-center">
-                    <PlanStatus included={row.ibm} />
+                    <PlanStatus included={row.microsoft} />
                   </div>
                 </div>
               ))}
