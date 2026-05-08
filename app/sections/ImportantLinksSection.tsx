@@ -228,10 +228,10 @@ function AudienceLinks({ audience }: { audience: LinkAudience }) {
       </h3>
 
       <div className="space-y-4">
-        {audience.groups.map((group) => (
+        {audience.groups.map((group, index) => (
           <div
             className="space-y-2"
-            key={group.title}
+            key={`${group.title}-${index}`}
           >
             <p className="m-0 text-[13px] font-bold leading-5 text-white">
               {group.title}
