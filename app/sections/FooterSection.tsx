@@ -1,6 +1,6 @@
 const footerColumns = [
   {
-    title: "Coding Ninjas",
+    title: "Brit Institute",
     links: [
       "Careers",
       "Privacy policy",
@@ -26,23 +26,23 @@ const footerColumns = [
   },
 ];
 
-function CodingNinjasMark() {
+function BritInstituteMark() {
   return (
     <span className="grid size-7 place-items-center rounded-full bg-white">
       <span className="rounded-[4px] bg-[#ff6a35] px-1.5 py-0.5 text-[12px] font-black leading-none text-white">
-        C
+        B
       </span>
     </span>
   );
 }
 
-function CodingNinjasLogo({ bootcamp = false }: { bootcamp?: boolean }) {
+function BritInstituteLogo({ bootcamp = false }: { bootcamp?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2">
-      <CodingNinjasMark />
+      <BritInstituteMark />
       <span className="leading-none">
         <span className="block text-[21px] font-semibold tracking-[0] text-white">
-          coding<span className="font-light text-zinc-300">ninjas</span>
+          Brit <span className="font-light text-zinc-300">Institute</span>
         </span>
         {bootcamp ? (
           <span className="block text-right text-[12px] font-bold tracking-[0.03em] text-white">
@@ -57,13 +57,13 @@ function CodingNinjasLogo({ bootcamp = false }: { bootcamp?: boolean }) {
 function Code360Logo() {
   return (
     <span className="inline-flex items-center gap-2">
-      <CodingNinjasMark />
+      <BritInstituteMark />
       <span className="leading-none">
         <span className="block text-[24px] font-black tracking-[0] text-white">
           <span className="text-[#ff6a35]">code</span>360
         </span>
         <span className="block text-[11px] font-medium text-zinc-300">
-          by codingninjas
+          by Brit Institute
         </span>
       </span>
     </span>
@@ -166,10 +166,10 @@ export function FooterSection() {
         <div className="grid gap-12 md:grid-cols-[1.5fr_0.8fr_0.95fr_0.8fr] md:gap-10">
           <div>
             <a
-              aria-label="Coding Ninjas"
+              aria-label="Brit Institute"
               href="#"
             >
-              <CodingNinjasLogo />
+              <BritInstituteLogo />
             </a>
 
             <div className="mt-9">
@@ -186,10 +186,10 @@ export function FooterSection() {
                 </a>
                 <a
                   className="flex items-center gap-5 transition hover:text-white"
-                  href="mailto:contact@codingninjas.com"
+                  href="mailto:contact@britinstitute.com"
                 >
                   <MailIcon />
-                  <span>contact@codingninjas.com</span>
+                  <span>contact@britinstitute.com</span>
                 </a>
               </div>
             </div>
@@ -200,14 +200,14 @@ export function FooterSection() {
               </h2>
               <div className="mt-6 space-y-7">
                 <a
-                  aria-label="Coding Ninjas Job Bootcamp"
+                  aria-label="Brit Institute Job Bootcamp"
                   className="inline-flex"
                   href="#"
                 >
-                  <CodingNinjasLogo bootcamp />
+                  <BritInstituteLogo bootcamp />
                 </a>
                 <a
-                  aria-label="Code 360 by Coding Ninjas"
+                  aria-label="Code 360 by Brit Institute"
                   className="inline-flex"
                   href="#"
                 >

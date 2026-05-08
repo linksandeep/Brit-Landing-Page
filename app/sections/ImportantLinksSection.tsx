@@ -49,12 +49,12 @@ const importantLinks: LinkAudience[] = [
         links: [
           {
             label:
-              "Data Analytics with GenAI Program by Coding Ninjas Job Bootcamp by Coding Ninjas",
+              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
             href: "https://www.codingninjas.com/programs/job-bootcamp-data-analytics?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
           {
             label:
-              "Data Analytics with GenAI Program by Coding Ninjas Job Bootcamp by IBM and Microsoft PL-300 Certification",
+              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by IBM and Microsoft PL-300 Certification",
             href: "https://www.codingninjas.com/programs/job-bootcamp-data-analytics-ibm?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
         ],
@@ -69,7 +69,7 @@ const importantLinks: LinkAudience[] = [
           },
           {
             label:
-              "Advanced Certification in GenAI and Multi-Agent Systems Program by Coding Ninjas",
+              "Advanced Certification in GenAI and Multi-Agent Systems Program by Brit Institute",
             href: "http://codingninjas.com/programs/gen-ai-advanced-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
         ],
@@ -94,7 +94,7 @@ const importantLinks: LinkAudience[] = [
         links: [
           {
             label:
-              "Software Development with GenAI Program by Coding Ninjas Job Bootcamp by Coding Ninjas",
+              "Software Development with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
             href: "https://www.codingninjas.com/programs/job-bootcamp-web-development?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
         ],
@@ -104,7 +104,7 @@ const importantLinks: LinkAudience[] = [
         links: [
           {
             label:
-              "Data Science with GenAI Program by Coding Ninjas Job Bootcamp by Coding Ninjas",
+              "Data Science with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
             href: "https://www.codingninjas.com/programs/job-bootcamp-data-science?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
         ],
@@ -296,7 +296,7 @@ export function ImportantLinksSection() {
         </div>
 
         <div className="mt-16 text-center text-[42px] font-black leading-none tracking-[0] sm:text-[72px] lg:text-[96px]">
-          <span className="coding-ninjas-shimmer">Coding Ninjas</span>
+          <span className="brit-institute-shimmer">Brit Institute</span>
         </div>
       </div>
     </section>

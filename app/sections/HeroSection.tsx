@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="mx-auto grid w-full max-w-[1064px] items-stretch gap-5 lg:grid-cols-[1.15fr_0.84fr]">
         <section className="rounded-[22px] border border-white/12 bg-[linear-gradient(140deg,rgba(38,15,68,0.92),rgba(15,24,83,0.92)_58%,rgba(33,63,129,0.78))] p-8 shadow-[0_25px_90px_rgba(0,0,0,0.28)] sm:p-11 lg:min-h-[610px]">
           <h1 className="max-w-[560px] text-4xl font-semibold leading-[1.28] tracking-[0] text-white sm:text-[42px]">
-            Software Development with GenAI Program by Coding Ninjas Job
+            Software Development with GenAI Program by Brit Institute Job
             Bootcamp
           </h1>
 
@@ -144,7 +144,7 @@ export function HeroSection() {
             </button>
 
             <p className="text-[11px] leading-[1.35] text-white/60">
-              I authorise Coding Ninjas to contact me with course updates & offers via
+              I authorise Brit Institute to contact me with course updates & offers via
               Email/SMS/Whatsapp/Call. I have read and agree to{" "}
               <a className="underline underline-offset-2" href="#">
                 Privacy Policy

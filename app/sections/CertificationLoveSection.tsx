@@ -22,7 +22,7 @@ export function CertificationLoveSection() {
 
           <article className="max-w-[440px] md:pt-10">
             <p className="text-[24px] font-normal leading-[1.28] tracking-[0] text-zinc-300 sm:text-[27px]">
-              Coding Ninjas Software Development course is very learner-friendly
+              Brit Institute Software Development course is very learner-friendly
               and practical. The step-by-step approach and hands-on projects made
               it easy to understand front-end and back-end concepts and build
               real-world web applications.

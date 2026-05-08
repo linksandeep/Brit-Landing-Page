@@ -143,24 +143,9 @@ html {
   animation-play-state: paused;
 }
 
-.coding-ninjas-shimmer {
+.brit-institute-shimmer {
   display: inline-block;
-  color: transparent;
-  background-image: linear-gradient(
-    108deg,
-    #171313 0%,
-    #171313 38%,
-    #2b2929 44%,
-    #8a8a8a 50%,
-    #2d2a2a 56%,
-    #171313 62%,
-    #171313 100%
-  );
-  background-size: 160% 100%;
-  background-position: 100% 50%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: coding-ninjas-shimmer 9s ease-in-out infinite;
+  color: #ffffff;
 }
 
 @keyframes curriculum-scroll {
@@ -183,28 +168,9 @@ html {
   }
 }
 
-@keyframes coding-ninjas-shimmer {
-  0% {
-    background-position: 100% 50%;
-  }
-
-  50% {
-    background-position: 0% 50%;
-  }
-
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .curriculum-marquee,
   .faculty-marquee {
     animation: none;
-  }
-
-  .coding-ninjas-shimmer {
-    animation: none;
-    background-position: 50% 50%;
   }
 }

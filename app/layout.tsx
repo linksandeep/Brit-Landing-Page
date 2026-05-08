@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coding Ninjas Job Bootcamp Webinar",
+  title: "Brit Institute Job Bootcamp Webinar",
   description: "Register for the free live software development with GenAI webinar.",
 };
 

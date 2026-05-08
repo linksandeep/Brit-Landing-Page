@@ -108,7 +108,7 @@ export function CareerCounselorSection() {
               </button>
 
               <p className="text-[9px] leading-[1.35] text-zinc-500 sm:text-[10px]">
-                I authorise Coding Ninjas to contact me with course updates &amp; offers
+                I authorise Brit Institute to contact me with course updates &amp; offers
                 via Email/SMS/Whatsapp/Call. I have read and agree to{" "}
                 <a className="underline underline-offset-2" href="#">
                   Privacy Policy

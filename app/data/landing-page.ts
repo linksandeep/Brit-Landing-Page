@@ -43,7 +43,7 @@ export const successStory = {
   image:
     "https://files.codingninjas.com/frame-2087324760-1768201375.webp",
   headline:
-    "With a solid foundation from Coding Ninjas, Abhishek transformed his skills and successfully transitioned into an AI/ML Engineer",
+    "With a solid foundation from Brit Institute, Abhishek transformed his skills and successfully transitioned into an AI/ML Engineer",
 };
 
 export const sectionTabs = [
@@ -108,12 +108,12 @@ export const planComparisonRows = [
     ibm: true,
   },
   {
-    perk: "Coding Ninjas Certifications",
+    perk: "Brit Institute Certifications",
     bootcamp: true,
     ibm: true,
   },
   {
-    perk: "Hands-on projects by Coding Ninjas",
+    perk: "Hands-on projects by Brit Institute",
     bootcamp: true,
     ibm: true,
   },
@@ -190,24 +190,24 @@ export const syllabusWeeks = [
 export const faqItems = [
   {
     question:
-      "What is the Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "What is the Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
-      "The Software Development with GenAI Program by Coding Ninjas Job Bootcamp with GenAI is an intensive, hands-on training program designed to equip learners with industry-relevant software development skills. You can choose between the MERN stack or Spring Boot, ensuring expertise in front-end and back-end technologies. The program follows an AI-infused curriculum, real-world projects, 1:1 mentorship, and expert-led sessions. With a 95% placement rate, 1200+ hiring companies, and an average salary hike of 128%, this software development bootcamp is ideal for anyone looking to break into tech or transition to a product-based company.",
+      "The Software Development with GenAI Program by Brit Institute Job Bootcamp with GenAI is an intensive, hands-on training program designed to equip learners with industry-relevant software development skills. You can choose between the MERN stack or Spring Boot, ensuring expertise in front-end and back-end technologies. The program follows an AI-infused curriculum, real-world projects, 1:1 mentorship, and expert-led sessions. With a 95% placement rate, 1200+ hiring companies, and an average salary hike of 128%, this software development bootcamp is ideal for anyone looking to break into tech or transition to a product-based company.",
   },
   {
     question:
-      "What is the refund policy for the Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "What is the refund policy for the Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer: "You can request a refund within 7 days of your batch start date.",
   },
   {
     question:
-      "Who is eligible to enroll in the Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "Who is eligible to enroll in the Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
       "The Bootcamp is open to working professionals, final-year college students, and fresher graduates from any industry or domain.",
   },
   {
     question:
-      "What is the duration of the Software Development with GenAI Program by Coding Ninjas Job Bootcamp course?",
+      "What is the duration of the Software Development with GenAI Program by Brit Institute Job Bootcamp course?",
     answer:
       "The Software Development Job Bootcamp with GenAI course is a structured, job-oriented program designed for comprehensive training. The duration varies based on the learning pace and includes self-paced classes, hands-on projects, and placement assistance.",
   },
@@ -219,25 +219,25 @@ export const faqItems = [
   },
   {
     question:
-      "How good is the placement record for this Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "How good is the placement record for this Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
       "With a 95% placement rate and partnerships with 1200+ hiring companies, this Software Development Job Bootcamp with GenAI has helped learners secure top tech jobs. Alumni have received an average salary hike of 128%, with some achieving 425% hikes.",
   },
   {
     question:
-      "How will I benefit from mentorship by industry experts during the Software Development with GenAI Program by Coding Ninjas Job Bootcamp course?",
+      "How will I benefit from mentorship by industry experts during the Software Development with GenAI Program by Brit Institute Job Bootcamp course?",
     answer:
       "Industry mentors are experts from reputed companies who have proven competencies in specific fields and are excellent guides to help you determine your next steps in the industry. They will conduct mock interviews with you on a one-on-one basis and provide detailed feedback.",
   },
   {
     question:
-      "What web development roles will I be eligible for after completing the Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "What web development roles will I be eligible for after completing the Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
       "We are currently offering a Software Development Job Bootcamp with GenAI program in MERN & Spring Boot, which will help you become a MERN Stack Developer, Spring Boot Developer, Back-end Developer, React Developer, Front-end Developer or related software development roles in the industry.",
   },
   {
     question:
-      "Where are Coding Ninjas alumni employed after completing the Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "Where are Brit Institute alumni employed after completing the Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
       "Our learners are employed at over 1,200 companies that have hired from us in the past. More than 1,400 of our alumni are placed in MAANG companies, and many are also employed in 103 out of 116 Indian unicorns.",
   },
@@ -254,7 +254,7 @@ export const faqItems = [
   {
     question: "Do I have to accept an offer from companies hiring?",
     answer:
-      "Yes, if you apply for a job opening through the Coding Ninjas placement cell and are selected, we expect you not to back out. However, you are welcome to apply for other job openings through our placement cell, but only if the minimum CTC offered is at least 50% higher than the job secured already by you through us. This policy applies specifically to the Coding Ninjas placement cell; you are free to apply for any opportunities outside of it without any restrictions.",
+      "Yes, if you apply for a job opening through the Brit Institute placement cell and are selected, we expect you not to back out. However, you are welcome to apply for other job openings through our placement cell, but only if the minimum CTC offered is at least 50% higher than the job secured already by you through us. This policy applies specifically to the Brit Institute placement cell; you are free to apply for any opportunities outside of it without any restrictions.",
   },
   {
     question: "Where will the classes take place?",
@@ -263,7 +263,7 @@ export const faqItems = [
   },
   {
     question:
-      "What is the average salary hike after completing the Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "What is the average salary hike after completing the Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
       "Our learners receive an average hike of 128% after completing the program.",
   },
@@ -274,7 +274,7 @@ export const faqItems = [
   },
   {
     question:
-      "When can I start appearing for placements during the Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "When can I start appearing for placements during the Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
       "After completing the program with the minimum requirement and clearing the placement eligibility criteria, you can start applying for all relevant opportunities.",
   },
@@ -295,7 +295,7 @@ export const faqItems = [
   },
   {
     question:
-      "How is AI integrated into the Software Development with GenAI Program by Coding Ninjas Job Bootcamp?",
+      "How is AI integrated into the Software Development with GenAI Program by Brit Institute Job Bootcamp?",
     answer:
       "AI is deeply embedded into the curriculum. Learners use Generative AI tools throughout the program to write cleaner code, debug faster, design APIs, optimize backend logic, and improve frontend development just like modern software teams do.",
   },
@@ -318,6 +318,6 @@ export const faqItems = [
   {
     question: "What certificates will I receive after completing the program?",
     answer:
-      "You will receive module-wise certificates from Coding Ninjas (for completion and excellence), along with industry-recognized certifications including 4 IBM* certifications, as well as an NSDC certification named for the Software Development with GenAI Program (Professionals).",
+      "You will receive module-wise certificates from Brit Institute (for completion and excellence), along with industry-recognized certifications including 4 IBM* certifications, as well as an NSDC certification named for the Software Development with GenAI Program (Professionals).",
   },
 ];
