@@ -64,8 +64,7 @@ export const aiJobStats = [
 export const successStory = {
   name: "Abhishek",
   company: "Optum",
-  image:
-    "https://files.codingninjas.com/frame-2087324760-1768201375.webp",
+  image: "/student1.webp",
   headline:
     "With a solid foundation from Brit Institute, Abhishek transformed his skills and successfully transitioned into a Data Analyst",
 };
@@ -146,36 +145,31 @@ export const planComparisonRows = [
 export const projectCards = [
   {
     title: "Sales performance dashboard",
-    image:
-      "https://files.codingninjas.in/frame-2087324756-1767694413.webp",
+    image: "/rectangle-869554106-1765793500.webp",
     description:
       "Interactive dashboard to track revenue, segments, trends, and GenAI insights.",
   },
   {
     title: "Customer churn analysis",
-    image:
-      "https://files.codingninjas.in/frame-2087324757-1767694411.webp",
+    image: "/frame-2087324679-1765627667.webp",
     description:
       "Analytics project to identify churn drivers, cohorts, and retention opportunities.",
   },
   {
     title: "Marketing campaign report",
-    image:
-      "https://files.codingninjas.in/frame-2087324755-1767694409.webp",
+    image: "/potd-easy-code-1767694775.webp",
     description:
       "Campaign performance analysis with channel ROI, funnels, and audience breakdowns.",
   },
   {
     title: "Operations analytics tracker",
-    image:
-      "https://files.codingninjas.in/frame-2087324758-1767694410.webp",
+    image: "/group-1437253642-min-1-1766484607.png",
     description:
       "Data tracker for KPIs, process gaps, service levels, and automated reporting.",
   },
   {
     title: "GenAI insight assistant",
-    image:
-      "https://files.codingninjas.in/frame-2087324754-1767694407.webp",
+    image: "/frame-2087324689-1767955329.webp",
     description:
       "AI-assisted analytics workflow for summaries, SQL prompts, and dashboard stories.",
   },

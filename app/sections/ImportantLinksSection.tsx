@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type ImportantLink = {
   label: string;
   href: string;
@@ -50,7 +48,7 @@ const importantLinks: LinkAudience[] = [
           {
             label:
               "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
-            href: "https://www.codingninjas.com/programs/job-bootcamp-data-analytics?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+            href: "#plans",
           },
           {
             label:
@@ -70,7 +68,7 @@ const importantLinks: LinkAudience[] = [
           {
             label:
               "Advanced Certification in GenAI and Multi-Agent Systems Program by Brit Institute",
-            href: "http://codingninjas.com/programs/gen-ai-advanced-certification?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+            href: "#plans",
           },
         ],
       },
@@ -95,7 +93,7 @@ const importantLinks: LinkAudience[] = [
           {
             label:
               "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
-            href: "https://www.codingninjas.com/programs/job-bootcamp-web-development?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+            href: "#plans",
           },
         ],
       },
@@ -105,7 +103,7 @@ const importantLinks: LinkAudience[] = [
           {
             label:
               "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
-            href: "https://www.codingninjas.com/programs/job-bootcamp-data-science?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
+            href: "#plans",
           },
         ],
       },
@@ -164,36 +162,12 @@ const importantLinks: LinkAudience[] = [
 ];
 
 const paymentBadges = [
-  {
-    alt: "Visa",
-    src: "https://files.codingninjas.com/frame-1000003729-32279.webp",
-    width: 56,
-  },
-  {
-    alt: "Paypal",
-    src: "https://files.codingninjas.com/frame-1000003730-32280.webp",
-    width: 56,
-  },
-  {
-    alt: "UPI Icon",
-    src: "https://files.codingninjas.com/upi-32277.webp",
-    width: 56,
-  },
-  {
-    alt: "No Cost EMI",
-    src: "https://files.codingninjas.com/no-cost-emi-32275.webp",
-    width: 96,
-  },
-  {
-    alt: "Secure Payment",
-    src: "https://files.codingninjas.com/100-32278.webp",
-    width: 208,
-  },
-  {
-    alt: "Razorpay",
-    src: "https://files.codingninjas.com/razorpay-32276.webp",
-    width: 68,
-  },
+  "Visa",
+  "Paypal",
+  "UPI",
+  "No Cost EMI",
+  "100% Secure",
+  "Razorpay",
 ];
 
 function LinksRow({ links }: { links: ImportantLink[] }) {
@@ -249,7 +223,7 @@ export function ImportantLinksSection() {
     <section className="bg-black px-5 pb-10 pt-12 sm:px-8 sm:pb-14 sm:pt-14 lg:px-10">
       <div className="mx-auto w-full max-w-[980px]">
         <h2 className="text-[25px] font-bold leading-tight tracking-[0] text-white sm:text-[28px]">
-          Important Links
+          Important
         </h2>
 
         <div className="mt-6 space-y-9">
@@ -269,27 +243,23 @@ export function ImportantLinksSection() {
           <div className="flex flex-wrap items-center justify-between gap-x-5 gap-y-3">
             <div className="flex flex-wrap items-center gap-3">
               {paymentBadges.slice(0, 4).map((badge) => (
-                <Image
-                  alt={badge.alt}
-                  className="h-6 rounded-[4px] bg-white object-contain"
-                  height={24}
-                  key={badge.alt}
-                  src={badge.src}
-                  width={badge.width}
-                />
+                <span
+                  className="inline-flex h-6 items-center rounded-[4px] bg-white px-3 text-[11px] font-bold leading-none text-zinc-950"
+                  key={badge}
+                >
+                  {badge}
+                </span>
               ))}
             </div>
 
             <div className="flex flex-wrap items-center gap-3">
               {paymentBadges.slice(4).map((badge) => (
-                <Image
-                  alt={badge.alt}
-                  className="h-6 rounded-[4px] bg-white object-contain"
-                  height={24}
-                  key={badge.alt}
-                  src={badge.src}
-                  width={badge.width}
-                />
+                <span
+                  className="inline-flex h-6 items-center rounded-[4px] bg-white px-3 text-[11px] font-bold leading-none text-zinc-950"
+                  key={badge}
+                >
+                  {badge}
+                </span>
               ))}
             </div>
           </div>
