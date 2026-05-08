@@ -1,41 +1,11 @@
 import Image from "next/image";
 
-function NsdcBadge() {
-  return (
-    <div className="inline-flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-[#1b4f86]">
-      <span
-        aria-hidden="true"
-        className="relative h-10 w-8 shrink-0"
-      >
-        <span className="absolute left-3 top-1 h-8 w-1 rotate-[18deg] rounded-full bg-[#1269b0]" />
-        <span className="absolute left-1 top-2 h-5 w-1 -rotate-[48deg] rounded-full bg-[#65ad31]" />
-        <span className="absolute right-0 top-2 h-5 w-1 rotate-[48deg] rounded-full bg-[#f26b2e]" />
-        <span className="absolute left-[13px] top-0 size-2 rounded-full bg-[#1269b0]" />
-        <span className="absolute left-0 top-1 size-2 rounded-full bg-[#65ad31]" />
-        <span className="absolute right-0 top-1 size-2 rounded-full bg-[#f26b2e]" />
-      </span>
-      <span className="leading-none">
-        <span className="block text-[13px] font-black tracking-[0.22em] text-zinc-800">
-          N S D C
-        </span>
-        <span className="mt-1 block text-[9px] font-semibold leading-[1.1]">
-          National
-          <br />
-          Skill Development
-          <br />
-          Corporation
-        </span>
-      </span>
-    </div>
-  );
-}
-
 export function AccreditationSection() {
   return (
     <section className="bg-black px-5 pb-12 pt-4 sm:px-8 sm:pb-14 sm:pt-6 lg:px-10">
       <div className="mx-auto w-full max-w-[980px]">
         <h2 className="text-[29px] font-bold leading-tight tracking-[0] text-white sm:text-[34px]">
-          We are recognised, trusted, accredited!
+          Learn with a trusted career-focused institute
         </h2>
 
         <div className="mt-12 rounded-[20px] border border-white/20 bg-[#191919] p-2 shadow-[0_24px_80px_rgba(0,0,0,0.45)]">
@@ -52,15 +22,17 @@ export function AccreditationSection() {
 
             <div className="lg:pl-1">
               <h3 className="text-[23px] font-bold leading-tight tracking-[0] text-white sm:text-[25px]">
-                NSDC approved training partners
+                Brit Institute certificate of completion
               </h3>
               <p className="mt-5 max-w-[440px] text-[19px] leading-7 text-zinc-300 sm:text-[20px]">
-                Assurance of quality &amp; industry relevance of our teaching
-                material from a national institute
+                Complete eligible Brit Institute programs and receive a
+                certificate that reflects your learning, project practice, and
+                commitment to building job-ready analytics skills.
               </p>
-              <div className="mt-4">
-                <NsdcBadge />
-              </div>
+              <p className="mt-4 max-w-[440px] text-[14px] leading-6 text-zinc-400">
+                Designed for learners preparing for UK data analytics and
+                business intelligence career pathways.
+              </p>
             </div>
           </div>
         </div>
