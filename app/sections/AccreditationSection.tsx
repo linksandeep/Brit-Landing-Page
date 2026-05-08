@@ -40,13 +40,13 @@ export function AccreditationSection() {
 
         <div className="mt-12 rounded-[20px] border border-white/20 bg-[#191919] p-2 shadow-[0_24px_80px_rgba(0,0,0,0.45)]">
           <div className="grid items-center gap-8 rounded-[14px] border border-white/8 bg-black px-6 py-8 sm:px-8 lg:grid-cols-[1fr_1.1fr] lg:gap-9">
-            <div className="relative mx-auto aspect-[1652/1170] w-full max-w-[430px] overflow-hidden rounded-[4px]">
+            <div className="relative mx-auto aspect-[1280/914] w-full max-w-[430px] overflow-hidden rounded-[4px]">
               <Image
-                alt="NSDC certificate of partnership"
+                alt="Brit Institute certificate"
                 className="object-contain"
                 fill
                 sizes="(max-width: 1024px) 82vw, 430px"
-                src="/nsdc_certificate-1772081941.webp"
+                src="/brit-certificate.jpeg"
               />
             </div>
 
