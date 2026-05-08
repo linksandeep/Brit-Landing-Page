@@ -8,12 +8,12 @@ export function Header() {
       >
         <span className="grid size-7 place-items-center rounded-full bg-white shadow-sm">
           <span className="rounded-[4px] bg-[#ff6a35] px-1.5 py-0.5 text-[12px] font-black leading-none text-white">
-            C
+            B
           </span>
         </span>
         <span className="leading-none">
           <span className="block text-[20px] font-semibold tracking-[0]">
-            coding<span className="font-light">ninjas</span>
+            Brit <span className="font-light">Institute</span>
           </span>
           <span className="block text-center text-[11px] font-bold tracking-[0.05em] text-zinc-300">
             /job-bootcamp

@@ -1,7 +1,7 @@
 const supportItems = [
   {
     title: "Get instant Doubt Support",
-    description: "24/7 support with our Teaching assistants & Ninja AI",
+    description: "24/7 support with teaching assistants & GenAI mentor",
   },
   {
     title: "Interview prep like a pro with AI",

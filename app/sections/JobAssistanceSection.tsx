@@ -31,7 +31,7 @@ export function JobAssistanceSection() {
 
           <div className="rounded-[20px] border border-white/20 bg-[#171717] p-2 shadow-[0_24px_70px_rgba(0,0,0,0.48)]">
             <Image
-              alt="AI job board cards for front end developer roles"
+              alt="AI job board cards for data analyst roles"
               className="h-auto w-full rounded-[14px] object-cover"
               height={340}
               src="/frame-2087324679-1765627667.webp"

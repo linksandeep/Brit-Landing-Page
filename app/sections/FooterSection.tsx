@@ -15,7 +15,7 @@ const footerColumns = [
     title: "Products",
     links: [
       "Job Bootcamp",
-      "Code 360",
+      "Analytics 360",
       "Professional Certifications",
       "Student Certifications",
     ],
@@ -54,13 +54,13 @@ function BritInstituteLogo({ bootcamp = false }: { bootcamp?: boolean }) {
   );
 }
 
-function Code360Logo() {
+function Analytics360Logo() {
   return (
     <span className="inline-flex items-center gap-2">
       <BritInstituteMark />
       <span className="leading-none">
         <span className="block text-[24px] font-black tracking-[0] text-white">
-          <span className="text-[#ff6a35]">code</span>360
+          <span className="text-[#ff6a35]">analytics</span>360
         </span>
         <span className="block text-[11px] font-medium text-zinc-300">
           by Brit Institute
@@ -207,11 +207,11 @@ export function FooterSection() {
                   <BritInstituteLogo bootcamp />
                 </a>
                 <a
-                  aria-label="Code 360 by Brit Institute"
+                  aria-label="Analytics 360 by Brit Institute"
                   className="inline-flex"
                   href="#"
                 >
-                  <Code360Logo />
+                  <Analytics360Logo />
                 </a>
               </div>
             </div>

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brit Institute Job Bootcamp Webinar",
-  description: "Register for the free live software development with GenAI webinar.",
+  title: "Brit Institute Data Analytics with GenAI Webinar",
+  description: "Register for the free live data analytics with GenAI webinar.",
 };
 
 export default function RootLayout({

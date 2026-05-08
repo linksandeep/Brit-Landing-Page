@@ -2,17 +2,13 @@ import Image from "next/image";
 
 import { audienceOptions } from "@/app/data/landing-page";
 
-function IndiaFlag() {
+function UKFlag() {
   return (
     <span
       aria-hidden="true"
-      className="grid h-[15px] w-[25px] overflow-hidden rounded-[1px] shadow-[0_0_0_1px_rgba(0,0,0,0.16)]"
+      className="grid h-[18px] w-[25px] place-items-center overflow-hidden rounded-[1px] bg-white text-[18px] leading-none shadow-[0_0_0_1px_rgba(0,0,0,0.16)]"
     >
-      <span className="bg-[#ff9933]" />
-      <span className="relative bg-white">
-        <span className="absolute left-1/2 top-1/2 size-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#1a4aa5]" />
-      </span>
-      <span className="bg-[#128807]" />
+      🇬🇧
     </span>
   );
 }
@@ -71,7 +67,7 @@ export function CareerCounselorSection() {
                   Phone Number <span className="text-[#ff6533]">*</span>
                 </span>
                 <div className="flex h-10 w-full items-center gap-4 rounded-[7px] border border-white/45 bg-[#1f1f1f] px-3 transition focus-within:border-[#ff7447] focus-within:ring-2 focus-within:ring-[#ff7447]/25">
-                  <IndiaFlag />
+                  <UKFlag />
                   <input
                     className="min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-zinc-500"
                     name="phone"

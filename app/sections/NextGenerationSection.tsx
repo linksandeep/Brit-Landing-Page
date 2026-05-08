@@ -14,7 +14,7 @@ export function NextGenerationSection() {
 
         <div className="mt-12 overflow-hidden rounded-[18px] border border-white/20 bg-[#141414] shadow-[0_34px_90px_rgba(0,0,0,0.64),0_0_120px_rgba(174,91,12,0.18)]">
           <Image
-            alt="Coding practice interface with Ninja AI assistant"
+            alt="Data analytics practice interface with GenAI assistant"
             className="h-auto w-full"
             height={1503}
             priority={false}

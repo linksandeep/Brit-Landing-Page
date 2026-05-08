@@ -90,21 +90,21 @@ const importantLinks: LinkAudience[] = [
         ],
       },
       {
-        title: "Job bootcamp - Software Development",
+        title: "Job bootcamp - Data Analytics",
         links: [
           {
             label:
-              "Software Development with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
+              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
             href: "https://www.codingninjas.com/programs/job-bootcamp-web-development?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
         ],
       },
       {
-        title: "Job bootcamp - Data Science",
+        title: "Job bootcamp - Data Analytics",
         links: [
           {
             label:
-              "Data Science with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
+              "Data Analytics with GenAI Program by Brit Institute Job Bootcamp by Brit Institute",
             href: "https://www.codingninjas.com/programs/job-bootcamp-data-science?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
         ],
@@ -140,21 +140,21 @@ const importantLinks: LinkAudience[] = [
         ],
       },
       {
-        title: "Certification with IIT - Software Development",
+        title: "Certification with IIT - Data Analytics",
         links: [
           {
             label:
-              "Advanced Certification in Software Development with GenAI and DSA by IITM Pravartak, TIH IIT Madras",
+              "Advanced Certification in Data Analytics with GenAI by IITM Pravartak, TIH IIT Madras",
             href: "https://www.codingninjas.com/careercamp/iitm-student-training-and-internship-certification-fswd/?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
         ],
       },
       {
-        title: "Certification with IIT - Data Structures and Algorithms",
+        title: "Certification with IIT - Data Analytics",
         links: [
           {
             label:
-              "Advanced Certification in Data Structures and Algorithms by IITM Pravartak, TIH IIT Madras",
+              "Advanced Certification in Data Analytics and GenAI by IITM Pravartak, TIH IIT Madras",
             href: "https://www.codingninjas.com/careercamp/iitm-student-training-and-internship-certification-dsa/?utm_source=internal&utm_medium=internal&utm_campaign=important_links",
           },
         ],

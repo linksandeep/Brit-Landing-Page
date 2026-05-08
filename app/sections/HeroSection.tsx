@@ -19,26 +19,26 @@ export function HeroSection() {
       <div className="mx-auto grid w-full max-w-[1064px] items-stretch gap-5 lg:grid-cols-[1.15fr_0.84fr]">
         <section className="rounded-[22px] border border-white/12 bg-[linear-gradient(140deg,rgba(38,15,68,0.92),rgba(15,24,83,0.92)_58%,rgba(33,63,129,0.78))] p-8 shadow-[0_25px_90px_rgba(0,0,0,0.28)] sm:p-11 lg:min-h-[610px]">
           <h1 className="max-w-[560px] text-4xl font-semibold leading-[1.28] tracking-[0] text-white sm:text-[42px]">
-            Software Development with GenAI Program by Brit Institute Job
+            Data Analytics with GenAI Program by Brit Institute Job
             Bootcamp
           </h1>
 
           <div className="mt-14 space-y-8 text-[17px] leading-7 text-white/92">
             <div className="grid grid-cols-[34px_1fr] gap-6">
               <span className="mt-1 size-2 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
-              <p>Designed for professionals to stand out in the tech job market</p>
+              <p>Designed for professionals to stand out in the data job market</p>
             </div>
             <div className="grid grid-cols-[34px_1fr] gap-6">
               <span className="mt-1 size-2 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
               <p>
-                AI infused curriculum that helps you master over AI 20+ tools
-                and workflows
+                AI infused curriculum that helps you master analytics tools and
+                GenAI workflows
               </p>
             </div>
           </div>
 
           <div className="mt-8">
-            <p className="text-base font-bold text-white">Master 20+ tools and tech</p>
+            <p className="text-base font-bold text-white">Master 20+ analytics tools</p>
             <div className="mt-3 flex flex-wrap gap-4">
               {toolBadges.map((tool) => (
                 <span
@@ -140,7 +140,7 @@ export function HeroSection() {
               className="mt-5 h-12 w-full rounded-lg bg-[#ff6838] text-base font-bold text-white shadow-[0_16px_32px_rgba(255,104,56,0.18)] transition hover:bg-[#ff7b50]"
               type="submit"
             >
-              Register for <span className="line-through">₹499</span> FREE
+              Register for <span className="line-through">£9</span> FREE
             </button>
 
             <p className="text-[11px] leading-[1.35] text-white/60">

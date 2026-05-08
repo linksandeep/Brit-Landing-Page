@@ -26,7 +26,7 @@ export function CurriculumSection() {
                     Learn 20+ AI tools
                   </h3>
                   <p className="mt-3 text-base leading-6 text-zinc-400">
-                    Replit, Notion AI, Chat GPT and more..
+                    Excel, SQL, Power BI, Chat GPT and more..
                   </p>
                 </div>
               </div>
@@ -64,13 +64,13 @@ export function CurriculumSection() {
             className="w-full rounded-lg bg-zinc-100 px-6 py-3.5 text-center text-base font-bold text-black shadow-[0_14px_36px_rgba(255,255,255,0.08)] transition hover:bg-white sm:w-auto"
             href="#register"
           >
-            View MERN Stack Brochure
+            View Data Analytics Brochure
           </a>
           <a
             className="w-full rounded-lg bg-zinc-100 px-6 py-3.5 text-center text-base font-bold text-black shadow-[0_14px_36px_rgba(255,255,255,0.08)] transition hover:bg-white sm:w-auto"
             href="#register"
           >
-            View Spring Boot Brochure
+            View GenAI Analytics Brochure
           </a>
         </div>
       </div>

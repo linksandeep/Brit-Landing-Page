@@ -31,21 +31,21 @@ const plans = [
   {
     key: "bootcamp",
     title: "Job Bootcamp",
-    subtitle: "to help you with a faster career transition to the tech field",
-    price: "₹5911",
+    subtitle: "to help you with a faster career transition to data analytics",
+    price: "£59",
   },
   {
     key: "ibm",
     title: "Job Bootcamp + IBM",
     subtitle: "Added IBM content (37 hrs.)",
-    price: "₹6281",
+    price: "£69",
   },
 ] as const;
 
-const planTracks = ["MERN", "Springboot"] as const;
+const planTracks = ["Data Analytics", "GenAI Analytics"] as const;
 
 export function PlansSection() {
-  const [activeTrack, setActiveTrack] = useState<(typeof planTracks)[number]>("MERN");
+  const [activeTrack, setActiveTrack] = useState<(typeof planTracks)[number]>("Data Analytics");
 
   return (
     <section

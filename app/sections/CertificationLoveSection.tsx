@@ -22,10 +22,10 @@ export function CertificationLoveSection() {
 
           <article className="max-w-[440px] md:pt-10">
             <p className="text-[24px] font-normal leading-[1.28] tracking-[0] text-zinc-300 sm:text-[27px]">
-              Brit Institute Software Development course is very learner-friendly
+              Brit Institute Data Analytics course is very learner-friendly
               and practical. The step-by-step approach and hands-on projects made
-              it easy to understand front-end and back-end concepts and build
-              real-world web applications.
+              it easy to understand dashboards, SQL, and business insights and
+              build real-world analytics projects.
             </p>
 
             <div className="mt-9">
@@ -33,7 +33,7 @@ export function CertificationLoveSection() {
                 Shubham Soni
               </p>
               <p className="mt-3 text-[14px] leading-none text-white">
-                Full Stack Developer at HashedIn
+                Data Analyst at HashedIn
               </p>
               <p className="mt-4 text-[24px] font-black leading-none tracking-[0] text-white">
                 Hashed<span className="text-[#f36b2a]">in</span>
