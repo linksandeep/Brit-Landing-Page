@@ -50,7 +50,7 @@ export function PlansSection() {
   return (
     <section
       id="plans"
-      className="scroll-mt-16 bg-black px-5 pb-24 pt-16 sm:px-8 sm:pb-28 sm:pt-20 lg:px-10"
+      className="scroll-mt-16 bg-black px-5 pb-16 pt-4 sm:px-8 sm:pb-20 sm:pt-6 lg:px-10"
     >
       <div className="mx-auto w-full max-w-[1110px]">
         <div

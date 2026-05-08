@@ -42,7 +42,7 @@ function MicrosoftLogo() {
 
 export function StudentVideoTestimonialsSection() {
   return (
-    <section className="bg-black px-5 pb-24 pt-8 sm:px-8 lg:px-10">
+    <section className="bg-black px-5 pb-10 pt-8 sm:px-8 sm:pb-12 lg:px-10">
       <div className="mx-auto w-full max-w-[1064px]">
         <div className="grid gap-8 lg:grid-cols-2">
           {videoTestimonials.map((student) => (

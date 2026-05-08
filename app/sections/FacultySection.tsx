@@ -76,7 +76,7 @@ const expertSupportPoints = [
 
 export function FacultySection() {
   return (
-    <section className="overflow-hidden bg-black px-5 pb-20 pt-16 sm:px-8 sm:pb-24 sm:pt-20 lg:px-10">
+    <section className="overflow-hidden bg-black px-5 pb-16 pt-6 sm:px-8 sm:pb-20 sm:pt-8 lg:px-10">
       <div className="mx-auto w-full max-w-[990px]">
         <p className="text-sm font-bold uppercase tracking-[0.04em] text-zinc-500">
           Community exclusive

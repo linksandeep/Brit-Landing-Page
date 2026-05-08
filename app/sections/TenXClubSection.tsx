@@ -49,7 +49,7 @@ export function TenXClubSection() {
   return (
     <section
       id="ten-x-club"
-      className="relative scroll-mt-14 overflow-hidden bg-black px-5 pb-20 pt-4 sm:px-8 sm:pb-24 lg:px-10"
+      className="relative scroll-mt-14 overflow-hidden bg-black px-5 pb-10 pt-4 sm:px-8 sm:pb-12 lg:px-10"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_75%_54%,rgba(154,89,38,0.34),transparent_28%),radial-gradient(circle_at_54%_58%,rgba(87,49,131,0.14),transparent_31%)]" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black to-transparent" />
