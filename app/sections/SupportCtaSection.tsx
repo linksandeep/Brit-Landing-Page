@@ -43,7 +43,7 @@ function CubeIcon() {
 
 export function SupportCtaSection() {
   return (
-    <section className="relative bg-black px-5 pb-20 pt-4 sm:px-8 sm:pb-24 lg:px-10">
+    <section className="relative bg-black px-5 pb-12 pt-4 sm:px-8 sm:pb-14 lg:px-10">
       <div className="mx-auto w-full max-w-[1050px]">
         <div className="grid gap-8 md:grid-cols-2">
           {supportItems.map((item) => (
