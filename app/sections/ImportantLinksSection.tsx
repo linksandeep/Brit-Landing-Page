@@ -246,7 +246,7 @@ function AudienceLinks({ audience }: { audience: LinkAudience }) {
 
 export function ImportantLinksSection() {
   return (
-    <section className="bg-black px-5 pb-10 pt-20 sm:px-8 sm:pb-14 sm:pt-24 lg:px-10">
+    <section className="bg-black px-5 pb-10 pt-12 sm:px-8 sm:pb-14 sm:pt-14 lg:px-10">
       <div className="mx-auto w-full max-w-[980px]">
         <h2 className="text-[25px] font-bold leading-tight tracking-[0] text-white sm:text-[28px]">
           Important Links

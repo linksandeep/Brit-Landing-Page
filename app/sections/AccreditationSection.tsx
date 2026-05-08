@@ -32,7 +32,7 @@ function NsdcBadge() {
 
 export function AccreditationSection() {
   return (
-    <section className="bg-black px-5 pb-24 pt-8 sm:px-8 sm:pb-28 sm:pt-12 lg:px-10">
+    <section className="bg-black px-5 pb-12 pt-4 sm:px-8 sm:pb-14 sm:pt-6 lg:px-10">
       <div className="mx-auto w-full max-w-[980px]">
         <h2 className="text-[29px] font-bold leading-tight tracking-[0] text-white sm:text-[34px]">
           We are recognised, trusted, accredited!
