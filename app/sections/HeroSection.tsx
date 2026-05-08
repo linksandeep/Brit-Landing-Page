@@ -26,13 +26,15 @@ export function HeroSection() {
           </h1>
 
           <div className="mt-10 space-y-6 text-base leading-6 text-white/92">
-            <div className="grid grid-cols-[34px_1fr] gap-5">
-              <span className="mt-1 size-2 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
-              <p>Designed for professionals to stand out in the data job market</p>
+            <div className="flex items-start gap-4">
+              <span className="mt-2 size-2 shrink-0 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
+              <p className="m-0">
+                Designed for professionals to stand out in the data job market
+              </p>
             </div>
-            <div className="grid grid-cols-[34px_1fr] gap-5">
-              <span className="mt-1 size-2 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
-              <p>
+            <div className="flex items-start gap-4">
+              <span className="mt-2 size-2 shrink-0 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
+              <p className="m-0">
                 AI infused curriculum that helps you master analytics tools and
                 GenAI workflows
               </p>
