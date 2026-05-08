@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function CertificationLoveSection() {
   return (
-    <section className="bg-black px-5 pb-20 pt-12 sm:px-8 sm:pb-24 lg:px-10">
+    <section className="bg-black px-5 pb-12 pt-10 sm:px-8 sm:pb-14 lg:px-10">
       <div className="mx-auto w-full max-w-[990px]">
         <h2 className="text-[28px] font-bold leading-tight tracking-[0] text-white sm:text-[34px]">
           Our students loved an AI first certification

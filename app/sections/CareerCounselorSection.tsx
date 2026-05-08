@@ -15,7 +15,7 @@ function UKFlag() {
 
 export function CareerCounselorSection() {
   return (
-    <section className="bg-black px-5 pb-24 pt-12 sm:px-8 sm:pb-28 sm:pt-16 lg:px-10">
+    <section className="bg-black px-5 pb-14 pt-6 sm:px-8 sm:pb-16 sm:pt-8 lg:px-10">
       <div className="mx-auto grid w-full max-w-[1100px] items-center gap-10 lg:grid-cols-[1fr_462px] lg:gap-16">
         <div className="flex justify-center lg:justify-start">
           <div className="relative aspect-[725/651] w-full max-w-[570px]">

@@ -13,7 +13,7 @@ const assistanceItems = [
 
 export function JobAssistanceSection() {
   return (
-    <section className="bg-black px-5 pb-20 pt-4 sm:px-8 sm:pb-24 lg:px-10">
+    <section className="bg-black px-5 pb-12 pt-4 sm:px-8 sm:pb-14 lg:px-10">
       <div className="mx-auto w-full max-w-[1050px]">
         <div className="grid items-center gap-8 lg:grid-cols-[0.88fr_1.12fr]">
           <div className="divide-y divide-white/16">

@@ -47,7 +47,7 @@ export function PlacementAssistanceSection() {
   return (
     <section
       id="placements"
-      className="scroll-mt-14 bg-black px-5 pb-20 pt-2 sm:px-8 sm:pb-24 lg:px-10"
+      className="scroll-mt-14 bg-black px-5 pb-12 pt-2 sm:px-8 sm:pb-14 lg:px-10"
     >
       <div className="mx-auto w-full max-w-[1050px]">
         <h2 className="max-w-[690px] text-[30px] font-bold leading-[1.28] tracking-[0] text-white sm:text-[36px]">

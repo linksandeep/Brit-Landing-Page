@@ -3,7 +3,7 @@ import { faqItems } from "@/app/data/landing-page";
 export function FaqSection() {
   return (
     <section
-      className="scroll-mt-16 bg-black px-5 pb-24 pt-6 sm:px-8 sm:pb-28 sm:pt-10 lg:px-10"
+      className="scroll-mt-16 bg-black px-5 pb-14 pt-4 sm:px-8 sm:pb-16 sm:pt-6 lg:px-10"
       id="faqs"
     >
       <div className="mx-auto w-full max-w-[980px]">
