@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -23,4 +23,188 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 56px;
+}
+
+.hero-noise {
+  background:
+    radial-gradient(circle at 18% 9%, rgba(122, 27, 166, 0.68), transparent 34%),
+    radial-gradient(circle at 57% 20%, rgba(15, 102, 157, 0.82), transparent 37%),
+    radial-gradient(circle at 74% 12%, rgba(22, 124, 78, 0.58), transparent 28%),
+    linear-gradient(112deg, #21053b 0%, #0d1d58 48%, #05283c 72%, #050505 100%);
+}
+
+.hero-noise::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  opacity: 0.24;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 3px 3px;
+  mix-blend-mode: screen;
+}
+
+.hero-input {
+  height: 42px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  background: #1d1d1d;
+  padding: 0 16px;
+  color: #ffffff;
+  box-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.25) inset,
+    0 6px 12px rgba(0, 0, 0, 0.32);
+  outline: none;
+}
+
+.hero-input::placeholder {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.hero-input:focus-within,
+.hero-input:focus {
+  border-color: #ff7b50;
+  box-shadow:
+    0 0 0 1px rgba(255, 123, 80, 0.75),
+    0 0 0 4px rgba(255, 123, 80, 0.15),
+    0 6px 12px rgba(0, 0, 0, 0.32);
+}
+
+.projects-stage,
+.curriculum-stage {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 13%,
+    #000 87%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 13%,
+    #000 87%,
+    transparent 100%
+  );
+}
+
+.projects-carousel-track {
+  will-change: transform;
+}
+
+.project-card {
+  transform-origin: center top;
+  will-change: opacity, transform;
+}
+
+.curriculum-marquee {
+  animation: curriculum-scroll 28s linear infinite;
+}
+
+.curriculum-stage:hover .curriculum-marquee {
+  animation-play-state: paused;
+}
+
+.faculty-stage {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow-x: hidden;
+  padding-left: max(20px, calc((100vw - 1816px) / 2));
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 3%,
+    #000 97%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 3%,
+    #000 97%,
+    transparent 100%
+  );
+}
+
+.faculty-marquee {
+  animation: faculty-scroll 38s linear infinite;
+}
+
+.faculty-stage:hover .faculty-marquee {
+  animation-play-state: paused;
+}
+
+.coding-ninjas-shimmer {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(
+    108deg,
+    #171313 0%,
+    #171313 38%,
+    #2b2929 44%,
+    #8a8a8a 50%,
+    #2d2a2a 56%,
+    #171313 62%,
+    #171313 100%
+  );
+  background-size: 160% 100%;
+  background-position: 100% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: coding-ninjas-shimmer 9s ease-in-out infinite;
+}
+
+@keyframes curriculum-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 16px));
+  }
+}
+
+@keyframes faculty-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 16px));
+  }
+}
+
+@keyframes coding-ninjas-shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .curriculum-marquee,
+  .faculty-marquee {
+    animation: none;
+  }
+
+  .coding-ninjas-shimmer {
+    animation: none;
+    background-position: 50% 50%;
+  }
 }
