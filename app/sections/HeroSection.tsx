@@ -47,7 +47,7 @@ export function HeroSection() {
             Free 2-hour Data Analytics with GenAI Webinar
           </h1>
 
-          <div className="mt-10 space-y-6 text-base leading-6 text-white/92">
+          <div className="mt-10 max-w-[520px] space-y-5 text-base leading-6 text-white/92">
             <div className="flex items-start gap-4">
               <span className="mt-2 size-2 shrink-0 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
               <p className="m-0">
@@ -57,8 +57,8 @@ export function HeroSection() {
             <div className="flex items-start gap-4">
               <span className="mt-2 size-2 shrink-0 rounded-full bg-cyan-100 shadow-[0_0_9px_4px_rgba(191,219,254,0.95),0_0_28px_15px_rgba(147,197,253,0.28)]" />
               <p className="m-0">
-                Learn the analytics career roadmap, essential tools, and practical
-                GenAI workflows in one focused session
+                In just 2 hours, learn the analytics career roadmap, essential
+                tools, and practical GenAI workflows.
               </p>
             </div>
           </div>
@@ -89,9 +89,14 @@ export function HeroSection() {
           id="register"
           className="relative rounded-[22px] border border-white/25 bg-[linear-gradient(150deg,rgba(63,91,130,0.84),rgba(44,74,116,0.86)_54%,rgba(36,57,87,0.88))] p-6 shadow-[0_25px_90px_rgba(0,0,0,0.30)] backdrop-blur md:p-7 lg:min-h-[560px]"
         >
-          <h2 className="text-[22px] font-semibold tracking-[0] text-white">
-            Reserve your <span className="text-[#ff6a35]">free webinar seat</span>{" "}
-            <span className="text-base font-normal text-white/90">for 16 May 2026</span>
+          <h2 className="text-[22px] font-semibold leading-[1.28] tracking-[0] text-white">
+            Reserve Your Free Webinar Seat for{" "}
+            <span className="inline-flex items-baseline gap-1.5 text-[#ff6a35]">
+              <span className="text-[34px] font-extrabold leading-none sm:text-[38px]">
+                16
+              </span>
+              <span className="text-[18px] font-semibold text-white">May 2026</span>
+            </span>
           </h2>
 
           <form className="mt-5 space-y-3" onSubmit={handleSubmit}>
@@ -149,15 +154,12 @@ export function HeroSection() {
                   type="tel"
                 />
               </div>
-              <p className="mt-0.5 text-xs leading-4 text-[#ff6a35]">
-                Phone number is required
-                <br />
-                Experience <span className="text-[#ff6a35]">*</span>
-              </p>
             </label>
 
             <fieldset className="space-y-2.5 pt-0.5">
-              <legend className="sr-only">Experience</legend>
+              <legend className="mb-1.5 text-xs text-white/85">
+                Experience <span className="text-[#ff6a35]">*</span>
+              </legend>
               {audienceOptions.map((option, index) => (
                 <label
                   className="flex cursor-pointer items-center gap-3 text-sm text-white/92"
@@ -191,7 +193,7 @@ export function HeroSection() {
 
             {submitState === "success" ? (
               <p aria-live="polite" className="text-xs font-medium text-emerald-200">
-                Registration submitted. We&apos;ll contact you soon.
+                Registration submitted successfully. We&apos;ll be in touch soon.
               </p>
             ) : null}
 
@@ -202,14 +204,14 @@ export function HeroSection() {
             ) : null}
 
             <p className="text-[11px] leading-[1.35] text-white/60">
-              I authorise Brit Institute to contact me with webinar updates & offers via
-              Email/SMS/Whatsapp/Call. I have read and agree to{" "}
+              I authorise Brit Institute to contact me with webinar updates and offers
+              via email, SMS, WhatsApp, and phone. I have read and agree to the{" "}
               <a className="underline underline-offset-2" href="#">
                 Privacy Policy
               </a>{" "}
-              &{" "}
+              and{" "}
               <a className="underline underline-offset-2" href="#">
-                Terms of use
+                Terms of Use
               </a>
             </p>
           </form>

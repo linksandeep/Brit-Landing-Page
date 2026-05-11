@@ -1,16 +1,21 @@
+import Image from "next/image";
+
 export function Header() {
   return (
     <header className="relative z-10 flex h-[68px] items-center justify-between px-5 sm:px-8 lg:px-[24vw]">
       <a
-        className="flex items-center gap-2"
+        className="flex items-center gap-3"
         href="#"
         aria-label="Brit Institute webinar"
       >
-        <span className="grid size-7 place-items-center rounded-full bg-white shadow-sm">
-          <span className="rounded-[4px] bg-[#ff6a35] px-1.5 py-0.5 text-[12px] font-black leading-none text-white">
-            B
-          </span>
-        </span>
+        <Image
+          alt="Brit Institute logo"
+          className="h-11 w-auto rounded-xl bg-white p-1 object-contain shadow-[0_10px_24px_rgba(255,255,255,0.14)]"
+          height={40}
+          priority
+          src="/brit-institute-official-logo-clean.png"
+          width={40}
+        />
         <span className="leading-none">
           <span className="block text-[20px] font-semibold tracking-[0]">
             Brit <span className="font-light">Institute</span>

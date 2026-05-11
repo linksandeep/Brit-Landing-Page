@@ -2,20 +2,6 @@ import Image from "next/image";
 
 const facultyMembers = [
   {
-    name: "Arjun Malhotra",
-    role: "Co-Founder",
-    image: "/faculty/arjun-malhotra.webp",
-    logo: "/faculty/hcl-logo.webp",
-    company: "HCL",
-  },
-  {
-    name: "Shivram Lakshminarayanan",
-    role: "Head of Analytics",
-    image: "/faculty/shivram-lakshminarayanan.webp",
-    logo: "/faculty/swiggy-logo.webp",
-    company: "Swiggy",
-  },
-  {
     name: "Shalini Goyal",
     role: "Executive Director",
     image: "/faculty/shalini-goyal.webp",
@@ -28,13 +14,6 @@ const facultyMembers = [
     image: "/faculty/paul-hunkin.webp",
     logo: "/faculty/jasonify-logo.webp",
     company: "Jasonify",
-  },
-  {
-    name: "Shivam Chauhan",
-    role: "Co-Founder & Chief Innovation Officer",
-    image: "/faculty/shivam-chauhan.webp",
-    logo: "/faculty/sarla-aviation-logo.webp",
-    company: "Sarla Aviation",
   },
   {
     name: "Monish Salhotra",
@@ -63,12 +42,6 @@ const facultyMembers = [
     image: "/faculty/deepak-chandani.webp",
     logo: "/faculty/deepak-company-logo.webp",
     company: "Deepak Chandani company",
-  },
-  {
-    name: "Alok Pandey",
-    role: "Senior Data Engineer",
-    image: "/faculty/alok.jpeg",
-    company: "Stryker",
   },
 ];
 

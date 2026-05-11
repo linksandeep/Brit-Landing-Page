@@ -56,7 +56,13 @@ export function CareerCounselorSection() {
         <aside className="rounded-[24px] border border-white/14 bg-[#202020] p-2 shadow-[0_24px_80px_rgba(0,0,0,0.5)]">
           <div className="rounded-[18px] border border-white/10 bg-[#171717] px-5 py-6 sm:px-7 sm:py-7">
             <h2 className="text-[18px] font-bold leading-tight tracking-[0] text-white sm:text-[19px]">
-              Reserve your free webinar seat
+              Reserve Your Free Webinar Seat for{" "}
+              <span className="inline-flex items-baseline gap-1.5 text-[#ff6533]">
+                <span className="text-[28px] font-extrabold leading-none sm:text-[30px]">
+                  16
+                </span>
+                <span className="text-[16px] font-semibold text-white">May 2026</span>
+              </span>
             </h2>
             <div className="mt-6 h-px bg-white/12" />
 
@@ -136,7 +142,7 @@ export function CareerCounselorSection() {
 
               {submitState === "success" ? (
                 <p aria-live="polite" className="text-xs font-medium text-emerald-200">
-                  Registration submitted. We&apos;ll contact you soon.
+                  Registration submitted successfully. We&apos;ll be in touch soon.
                 </p>
               ) : null}
 
@@ -147,14 +153,15 @@ export function CareerCounselorSection() {
               ) : null}
 
               <p className="text-[9px] leading-[1.35] text-zinc-500 sm:text-[10px]">
-                I authorise Brit Institute to contact me with webinar updates &amp; offers
-                via Email/SMS/Whatsapp/Call. I have read and agree to{" "}
+                I authorise Brit Institute to contact me with webinar updates and
+                offers via email, SMS, WhatsApp, and phone. I have read and agree to
+                the{" "}
                 <a className="underline underline-offset-2" href="#">
                   Privacy Policy
                 </a>{" "}
-                &amp;{" "}
+                and{" "}
                 <a className="underline underline-offset-2" href="#">
-                  Terms of use
+                  Terms of Use
                 </a>
               </p>
             </form>

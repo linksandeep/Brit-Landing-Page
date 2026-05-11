@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/britinstitute_v1.png",
-        sizes: "500x500",
+        url: "/brit-institute-official-logo-clean.png",
+        sizes: "630x629",
         type: "image/png",
       },
       {

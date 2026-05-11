@@ -16,7 +16,6 @@ import { PlansSection } from "@/app/sections/PlansSection";
 import { ProjectsSection } from "@/app/sections/ProjectsSection";
 import { SectionTabsNav } from "@/app/sections/SectionTabsNav";
 import { StatsSection } from "@/app/sections/StatsSection";
-import { StudentVideoTestimonialsSection } from "@/app/sections/StudentVideoTestimonialsSection";
 import { SupportCtaSection } from "@/app/sections/SupportCtaSection";
 import { TenXClubSection } from "@/app/sections/TenXClubSection";
 import { TestimonialsSection } from "@/app/sections/TestimonialsSection";
@@ -39,7 +38,6 @@ export default function Home() {
       <TenXClubSection />
       <FacultySection />
       <CertificationLoveSection />
-      <StudentVideoTestimonialsSection />
       <PlansSection />
       <CareerCounselorSection />
       <FaqSection />

@@ -1,45 +1,15 @@
-const footerColumns = [
-  {
-    title: "Brit Institute",
-    links: [
-      "Careers",
-      "Privacy policy",
-      "Terms & conditions",
-      "Pricing & refund policy",
-      "Bug bounty",
-      "Review",
-      "Press release",
-    ],
-  },
-  {
-    title: "Products",
-    links: [
-      "Live Webinars",
-      "Analytics 360",
-      "Professional Certifications",
-      "Student Certifications",
-    ],
-  },
-  {
-    title: "Community",
-    links: ["10X Club", "Student Chapters", "Hire from us"],
-  },
-];
-
-function BritInstituteMark() {
-  return (
-    <span className="grid size-7 place-items-center rounded-full bg-white">
-      <span className="rounded-[4px] bg-[#ff6a35] px-1.5 py-0.5 text-[12px] font-black leading-none text-white">
-        B
-      </span>
-    </span>
-  );
-}
+import Image from "next/image";
 
 function BritInstituteLogo({ webinar = false }: { webinar?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2">
-      <BritInstituteMark />
+      <Image
+        alt="Brit Institute logo"
+        className="h-11 w-auto rounded-xl bg-white p-1 object-contain"
+        height={40}
+        src="/brit-institute-official-logo-clean.png"
+        width={40}
+      />
       <span className="leading-none">
         <span className="block text-[21px] font-semibold tracking-[0] text-white">
           Brit <span className="font-light text-zinc-300">Institute</span>
@@ -49,22 +19,6 @@ function BritInstituteLogo({ webinar = false }: { webinar?: boolean }) {
             /webinar
           </span>
         ) : null}
-      </span>
-    </span>
-  );
-}
-
-function Analytics360Logo() {
-  return (
-    <span className="inline-flex items-center gap-2">
-      <BritInstituteMark />
-      <span className="leading-none">
-        <span className="block text-[24px] font-black tracking-[0] text-white">
-          <span className="text-[#ff6a35]">analytics</span>360
-        </span>
-        <span className="block text-[11px] font-medium text-zinc-300">
-          by Brit Institute
-        </span>
       </span>
     </span>
   );
@@ -163,7 +117,7 @@ export function FooterSection() {
   return (
     <footer className="bg-black px-5 pb-20 pt-16 sm:px-8 sm:pt-[72px] lg:px-10">
       <div className="mx-auto w-full max-w-[980px]">
-        <div className="grid gap-12 md:grid-cols-[1.5fr_0.8fr_0.95fr_0.8fr] md:gap-10">
+        <div className="grid gap-10 md:grid-cols-[1.15fr_0.85fr] md:items-start md:gap-16">
           <div>
             <a
               aria-label="Brit Institute"
@@ -172,73 +126,44 @@ export function FooterSection() {
               <BritInstituteLogo />
             </a>
 
-            <div className="mt-9">
-              <h2 className="text-[15px] font-bold leading-none text-white">
-                Contact us
-              </h2>
-              <div className="mt-6 space-y-5 text-[17px] leading-none text-zinc-300">
-                <a
-                  className="flex items-center gap-5 transition hover:text-white"
-                  href="tel:18001233598"
-                >
-                  <PhoneIcon />
-                  <span>1800-123-3598</span>
-                </a>
-                <a
-                  className="flex items-center gap-5 transition hover:text-white"
-                  href="mailto:contact@britinstitute.com"
-                >
-                  <MailIcon />
-                  <span>contact@britinstitute.com</span>
-                </a>
-              </div>
-            </div>
-
-            <div className="mt-10">
-              <h2 className="text-[15px] font-bold leading-none text-white">
-                Our offerings
-              </h2>
-              <div className="mt-6 space-y-7">
-                <a
-                  aria-label="Brit Institute Webinar"
-                  className="inline-flex"
-                  href="#"
-                >
-                  <BritInstituteLogo webinar />
-                </a>
-                <a
-                  aria-label="Analytics 360 by Brit Institute"
-                  className="inline-flex"
-                  href="#"
-                >
-                  <Analytics360Logo />
-                </a>
-              </div>
-            </div>
+            <p className="mt-6 max-w-[420px] text-[15px] leading-7 text-zinc-300">
+              Brit Institute helps learners and professionals build practical,
+              career-focused skills through live training and guided support.
+            </p>
           </div>
 
-          {footerColumns.map((column) => (
-            <nav
-              aria-label={column.title}
-              key={column.title}
-            >
-              <h2 className="text-[15px] font-bold leading-none text-white">
-                {column.title}
-              </h2>
-              <ul className="mt-7 space-y-5">
-                {column.links.map((link) => (
-                  <li key={link}>
-                    <a
-                      className="text-[13px] font-medium leading-none text-zinc-300 transition hover:text-white"
-                      href="#"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ))}
+          <div>
+            <h2 className="text-[15px] font-bold leading-none text-white">
+              Contact Us
+            </h2>
+            <div className="mt-6 space-y-5 text-[17px] text-zinc-300">
+              <a
+                className="flex items-center gap-5 transition hover:text-white"
+                href="tel:+447520664011"
+              >
+                <PhoneIcon />
+                <span>+44 7520 664011</span>
+              </a>
+              <a
+                className="flex items-center gap-5 transition hover:text-white"
+                href="mailto:info@britinstitute.uk"
+              >
+                <MailIcon />
+                <span>info@britinstitute.uk</span>
+              </a>
+              <address className="not-italic leading-7 text-zinc-300">
+                Office 7084
+                <br />
+                58 Peregrine Road
+                <br />
+                Hainault, Ilford
+                <br />
+                Essex, IG6 3SZ
+                <br />
+                United Kingdom
+              </address>
+            </div>
+          </div>
         </div>
 
         <div className="mt-10 h-px bg-white/20" />
