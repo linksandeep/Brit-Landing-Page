@@ -6,34 +6,44 @@ import Image from "next/image";
 import { audienceOptions } from "@/app/data/landing-page";
 import { submitLeadForm } from "@/app/lib/lead-form";
 
-function UKFlag() {
-  return (
-    <span
-      aria-hidden="true"
-      className="grid h-[18px] w-[25px] place-items-center overflow-hidden rounded-[1px] bg-white text-[18px] leading-none shadow-[0_0_0_1px_rgba(0,0,0,0.16)]"
-    >
-      🇬🇧
-    </span>
-  );
-}
+const countryDialCodes = [
+  { code: "+44", flag: "🇬🇧", name: "United Kingdom" },
+  { code: "+1", flag: "🇺🇸", name: "United States" },
+  { code: "+91", flag: "🇮🇳", name: "India" },
+  { code: "+1", flag: "🇨🇦", name: "Canada" },
+  { code: "+61", flag: "🇦🇺", name: "Australia" },
+  { code: "+49", flag: "🇩🇪", name: "Germany" },
+  { code: "+33", flag: "🇫🇷", name: "France" },
+  { code: "+971", flag: "🇦🇪", name: "United Arab Emirates" },
+  { code: "+65", flag: "🇸🇬", name: "Singapore" },
+  { code: "+966", flag: "🇸🇦", name: "Saudi Arabia" },
+];
 
 export function CareerCounselorSection() {
   const [submitState, setSubmitState] = useState<"idle" | "submitting" | "success" | "error">(
     "idle",
   );
+  const [submitMessage, setSubmitMessage] = useState("");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
 
     setSubmitState("submitting");
+    setSubmitMessage("");
 
     try {
       await submitLeadForm(form);
       form.reset();
       setSubmitState("success");
-    } catch {
+      setSubmitMessage("Registration submitted successfully. We'll be in touch soon.");
+    } catch (error) {
       setSubmitState("error");
+      setSubmitMessage(
+        error instanceof Error && error.message
+          ? error.message
+          : "Submission failed. Please try again.",
+      );
     }
   }
 
@@ -97,8 +107,22 @@ export function CareerCounselorSection() {
                 <span className="mb-2.5 block text-xs font-medium text-white">
                   Phone Number <span className="text-[#ff6533]">*</span>
                 </span>
-                <div className="flex h-10 w-full items-center gap-4 rounded-[7px] border border-white/45 bg-[#1f1f1f] px-3 transition focus-within:border-[#ff7447] focus-within:ring-2 focus-within:ring-[#ff7447]/25">
-                  <UKFlag />
+                <div className="flex h-10 w-full items-center gap-3 rounded-[7px] border border-white/45 bg-[#1f1f1f] px-3 transition focus-within:border-[#ff7447] focus-within:ring-2 focus-within:ring-[#ff7447]/25">
+                  <select
+                    aria-label="Country code"
+                    className="h-7 w-[92px] rounded border border-white/20 bg-[#111] px-2 text-sm text-white outline-none transition focus:border-[#ff7447]"
+                    defaultValue="+44"
+                    name="countryCode"
+                  >
+                    {countryDialCodes.map((country) => (
+                      <option
+                        key={`${country.name}-${country.code}`}
+                        value={country.code}
+                      >
+                        {country.flag} {country.code}
+                      </option>
+                    ))}
+                  </select>
                   <input
                     className="min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-zinc-500"
                     name="phone"
@@ -142,13 +166,13 @@ export function CareerCounselorSection() {
 
               {submitState === "success" ? (
                 <p aria-live="polite" className="text-xs font-medium text-emerald-200">
-                  Registration submitted successfully. We&apos;ll be in touch soon.
+                  {submitMessage || "Registration submitted successfully. We'll be in touch soon."}
                 </p>
               ) : null}
 
               {submitState === "error" ? (
                 <p aria-live="polite" className="text-xs font-medium text-[#ffb199]">
-                  Submission failed. Please try again.
+                  {submitMessage || "Submission failed. Please try again."}
                 </p>
               ) : null}
 

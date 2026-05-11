@@ -1,15 +1,31 @@
 export type LeadPayload = {
-  agreed: true;
-  course: string;
   email: string;
+  folder: string;
   name: string;
+  notes: string;
   phone: string;
-  purpose: "upskill";
-  source: string;
+  position: string;
+  priority: "Medium";
+  source: "Manual";
 };
 
-const course = "Data Science & Machine Learning Certification Program";
-const source = "Brit Institute Webinar landing page";
+const folder = "Brit Institute Webinar Landing Page";
+const defaultPosition = "Webinar Registrant";
+
+function normalizePhone(countryCode: string, phone: string) {
+  const cleanCountryCode = countryCode.replace(/\s+/g, "");
+  const cleanPhone = phone.replace(/[^\d+]/g, "");
+
+  if (!cleanPhone) {
+    return cleanCountryCode;
+  }
+
+  if (cleanPhone.startsWith("+")) {
+    return cleanPhone;
+  }
+
+  return `${cleanCountryCode}${cleanPhone}`;
+}
 
 function getFormValue(formData: FormData, key: string) {
   const value = formData.get(key);
@@ -21,15 +37,21 @@ export function buildLeadPayload(form: HTMLFormElement): LeadPayload {
   const formData = new FormData(form);
   const phone = getFormValue(formData, "phone");
   const countryCode = getFormValue(formData, "countryCode") || "+44";
+  const position =
+    getFormValue(formData, "position") ||
+    getFormValue(formData, "experience") ||
+    getFormValue(formData, "career-experience") ||
+    defaultPosition;
 
   return {
-    agreed: true,
-    course,
     email: getFormValue(formData, "email"),
+    folder,
     name: getFormValue(formData, "name"),
-    phone: phone.startsWith("+") ? phone : `${countryCode} ${phone}`.trim(),
-    purpose: "upskill",
-    source,
+    notes: "",
+    phone: normalizePhone(countryCode, phone),
+    position,
+    priority: "Medium",
+    source: "Manual",
   };
 }
 
@@ -43,6 +65,17 @@ export async function submitLeadForm(form: HTMLFormElement) {
   });
 
   if (!response.ok) {
-    throw new Error("Unable to submit lead");
+    let message = "Unable to submit lead";
+
+    try {
+      const errorPayload = (await response.json()) as { message?: string };
+      if (typeof errorPayload.message === "string" && errorPayload.message.trim()) {
+        message = errorPayload.message;
+      }
+    } catch {
+      // Fall back to the default error message when JSON parsing fails.
+    }
+
+    throw new Error(message);
   }
 }

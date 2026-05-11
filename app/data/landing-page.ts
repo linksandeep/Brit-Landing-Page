@@ -34,8 +34,8 @@ export const toolBadges = [
 export const audienceOptions = [
   "Working professional - Technical roles",
   "Working professional - Non technical",
-  "University student - Final year",
-  "University student - 1st to pre-final year",
+  "Career starter - Final year",
+  "Career starter - Early stage",
   "Others",
 ];
 
@@ -61,20 +61,11 @@ export const aiJobStats = [
   },
 ];
 
-export const successStory = {
-  name: "Abhishek",
-  company: "Optum",
-  image: "/student1.webp",
-  headline:
-    "With a solid foundation from Brit Institute, Abhishek transformed his skills and successfully transitioned into a Data Analyst",
-};
-
 export const sectionTabs = [
   { label: "Agenda", href: "#curriculum" },
   { label: "Career paths", href: "#placements" },
   { label: "Community", href: "#ten-x-club" },
   { label: "Expert", href: "#faculty" },
-  { label: "Testimonials", href: "#testimonials" },
   { label: "Register", href: "#plans" },
   { label: "FAQs", href: "#faqs" },
 ];
@@ -201,7 +192,7 @@ export const faqItems = [
     question:
       "Who should attend this webinar?",
     answer:
-      "Working professionals, final-year college students, fresher graduates, and career switchers from any domain can attend. No computer science degree is required.",
+      "Working professionals, fresher graduates, early-career learners, and career switchers from any domain can attend. No computer science degree is required.",
   },
   {
     question:

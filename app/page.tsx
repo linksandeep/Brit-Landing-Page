@@ -18,7 +18,6 @@ import { SectionTabsNav } from "@/app/sections/SectionTabsNav";
 import { StatsSection } from "@/app/sections/StatsSection";
 import { SupportCtaSection } from "@/app/sections/SupportCtaSection";
 import { TenXClubSection } from "@/app/sections/TenXClubSection";
-import { TestimonialsSection } from "@/app/sections/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -30,7 +29,6 @@ export default function Home() {
       <SectionTabsNav />
       <ProjectsSection />
       <CurriculumSection />
-      <TestimonialsSection />
       <NextGenerationSection />
       <SupportCtaSection />
       <PlacementAssistanceSection />

@@ -23,19 +23,27 @@ export function HeroSection() {
   const [submitState, setSubmitState] = useState<"idle" | "submitting" | "success" | "error">(
     "idle",
   );
+  const [submitMessage, setSubmitMessage] = useState("");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
 
     setSubmitState("submitting");
+    setSubmitMessage("");
 
     try {
       await submitLeadForm(form);
       form.reset();
       setSubmitState("success");
-    } catch {
+      setSubmitMessage("Registration submitted successfully. We'll be in touch soon.");
+    } catch (error) {
       setSubmitState("error");
+      setSubmitMessage(
+        error instanceof Error && error.message
+          ? error.message
+          : "Submission failed. Please try again.",
+      );
     }
   }
 
@@ -193,13 +201,13 @@ export function HeroSection() {
 
             {submitState === "success" ? (
               <p aria-live="polite" className="text-xs font-medium text-emerald-200">
-                Registration submitted successfully. We&apos;ll be in touch soon.
+                {submitMessage || "Registration submitted successfully. We'll be in touch soon."}
               </p>
             ) : null}
 
             {submitState === "error" ? (
               <p aria-live="polite" className="text-xs font-medium text-[#ffb199]">
-                Submission failed. Please try again.
+                {submitMessage || "Submission failed. Please try again."}
               </p>
             ) : null}
 
