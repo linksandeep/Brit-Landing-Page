@@ -61,11 +61,11 @@ export function TenXClubSection() {
 
         <div className="mt-8 overflow-hidden rounded-[20px] border border-white/20 bg-[#141414] p-2 shadow-[0_30px_86px_rgba(0,0,0,0.62),0_0_110px_rgba(154,89,38,0.16)] sm:mt-9">
           <Image
-            alt="Students in the 10X Club community"
+            alt="Students in the Brit Institute learning community"
             className="h-auto w-full rounded-[14px] object-cover"
-            height={1170}
-            src="/frame-2087324689-1767955329.webp"
-            width={1920}
+            height={996}
+            src="/brit-learning-community.png"
+            width={1632}
           />
         </div>
 
