@@ -122,9 +122,9 @@ export const projectCards = [
   },
   {
     title: "Customer churn analysis",
-    image: "/frame-2087324679-1765627667.webp",
+    image: "/group-1437253642-min-1-1766484607.png",
     description:
-      "Analytics project to identify churn drivers, cohorts, and retention opportunities.",
+      "Analytics project to identify churn drivers, cohorts, retention opportunities, and business risk patterns.",
   },
   {
     title: "Marketing campaign report",
@@ -254,12 +254,12 @@ export const faqItems = [
     question:
       "What salary range will be discussed during the webinar?",
     answer:
-      "UK data analyst salaries are commonly benchmarked around £40K-£42K per year, with junior roles often in the mid-£20K range and senior data analyst roles around £52K+ depending on location, experience, and employer.",
+      "UK data analytics opportunities can start from the mid-£20K range for entry roles and grow strongly with experience, with many roles discussed in the £40K-£65K range and top packages reaching up to £90K depending on specialisation, employer, and performance.",
   },
   {
     question: "Will I get recordings after the webinar?",
     answer:
-      "Live attendance is recommended. Any recording or resource access will be shared by the Brit Institute team after registration if available.",
+      "No, webinar recordings will not be shared.",
   },
   {
     question:
