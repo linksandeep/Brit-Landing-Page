@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { whatsappCommunityUrl } from "@/app/data/community";
+
 const tenXClubPerks = [
   {
     title: "Learn with a serious community",
@@ -90,7 +92,15 @@ export function TenXClubSection() {
           ))}
         </div>
 
-        <div className="mt-8 flex justify-center sm:mt-9">
+        <div className="mt-8 flex flex-wrap justify-center gap-3 sm:mt-9">
+          <a
+            className="rounded-lg bg-[#25d366] px-7 py-3.5 text-center text-base font-bold text-black shadow-[0_18px_38px_rgba(37,211,102,0.18)] transition hover:bg-[#3ee37a]"
+            href={whatsappCommunityUrl}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Join WhatsApp Community
+          </a>
           <a
             className="rounded-lg bg-[#ff6533] px-7 py-3.5 text-center text-base font-bold text-white shadow-[0_18px_38px_rgba(255,101,51,0.26)] transition hover:bg-[#ff7447]"
             href="#register"

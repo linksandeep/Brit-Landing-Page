@@ -1,8 +1,9 @@
 "use client";
 
-import { type FormEvent, useState } from "react";
+import { type FormEvent, type MouseEvent, useState } from "react";
 import Image from "next/image";
 
+import { whatsappCommunityUrl } from "@/app/data/community";
 import { audienceOptions } from "@/app/data/landing-page";
 import { submitLeadForm } from "@/app/lib/lead-form";
 
@@ -25,10 +26,7 @@ export function CareerCounselorSection() {
   );
   const [submitMessage, setSubmitMessage] = useState("");
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const form = event.currentTarget;
-
+  async function submitRegistrationForm(form: HTMLFormElement) {
     setSubmitState("submitting");
     setSubmitMessage("");
 
@@ -36,7 +34,10 @@ export function CareerCounselorSection() {
       await submitLeadForm(form);
       form.reset();
       setSubmitState("success");
-      setSubmitMessage("Registration submitted successfully. We'll be in touch soon.");
+      setSubmitMessage("Registration submitted successfully. Opening WhatsApp community...");
+      window.setTimeout(() => {
+        window.location.href = whatsappCommunityUrl;
+      }, 500);
     } catch (error) {
       setSubmitState("error");
       setSubmitMessage(
@@ -45,6 +46,22 @@ export function CareerCounselorSection() {
           : "Submission failed. Please try again.",
       );
     }
+  }
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    void submitRegistrationForm(event.currentTarget);
+  }
+
+  function handleRegisterClick(event: MouseEvent<HTMLButtonElement>) {
+    event.preventDefault();
+    const form = event.currentTarget.form;
+
+    if (!form || !form.reportValidity()) {
+      return;
+    }
+
+    void submitRegistrationForm(form);
   }
 
   return (
@@ -145,7 +162,7 @@ export function CareerCounselorSection() {
                     <input
                       className="size-4 accent-[#ff6533]"
                       defaultChecked={index === 1}
-                      name="career-experience"
+                      name="experience"
                       type="radio"
                       value={option}
                     />
@@ -157,7 +174,8 @@ export function CareerCounselorSection() {
               <button
                 className="h-12 w-full rounded-[7px] border border-white bg-transparent text-base font-bold text-white transition hover:bg-white hover:text-black disabled:cursor-not-allowed disabled:opacity-70"
                 disabled={submitState === "submitting"}
-                type="submit"
+                onClick={handleRegisterClick}
+                type="button"
               >
                 {submitState === "submitting"
                   ? "Registering..."

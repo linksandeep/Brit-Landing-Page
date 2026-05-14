@@ -3,6 +3,7 @@
 import { type FormEvent, useState } from "react";
 import Image from "next/image";
 
+import { whatsappCommunityUrl } from "@/app/data/community";
 import { audienceOptions, toolBadges } from "@/app/data/landing-page";
 import { submitLeadForm } from "@/app/lib/lead-form";
 
@@ -36,7 +37,10 @@ export function HeroSection() {
       await submitLeadForm(form);
       form.reset();
       setSubmitState("success");
-      setSubmitMessage("Registration submitted successfully. We'll be in touch soon.");
+      setSubmitMessage("Registration submitted successfully. Opening WhatsApp community...");
+      window.setTimeout(() => {
+        window.location.href = whatsappCommunityUrl;
+      }, 500);
     } catch (error) {
       setSubmitState("error");
       setSubmitMessage(
